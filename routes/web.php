@@ -18,7 +18,7 @@ Route::get('/','PagesController@index');
 Route::get('about','PagesController@about');
 Route::get('lien-he','PagesController@lienhe');
 Route::get('dichvu','PagesController@dichvu');
-Route::get('dichvu/{dv}','PagesController@giupviec');
+Route::get('dichvu/giadinh','PagesController@giupviec');
 Route::get('debug',function(){
     return view('pages.debug');
 });

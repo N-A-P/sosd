@@ -20,6 +20,6 @@ class PagesController extends Controller
    }
    public function giupviec(){
        
-       return view('pages.debug');
+       return view('pages.giup-viec-gia-dinh');
    }
 }
