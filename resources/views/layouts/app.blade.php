@@ -25,23 +25,23 @@
             padding: 0 !important;
         }
     </style>
-    <link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='wordpress-popular-posts-css-css' href='css/wpp.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='bootstrap-style-css' href='css/bootstrap.min.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='owl-style-css' href='assets/owl.carousel.min.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='main-style-css' href='css/style_main.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fontawesome-min-css'  href='css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='{{ asset('css/styles.css') }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='wordpress-popular-posts-css-css' href='{{ asset('css/wpp.css') }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-style-css' href='{{ asset('css/bootstrap.min.css') }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='owl-style-css' href='{{ asset('assets/owl.carousel.min.css') }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='main-style-css' href='{{ asset('css/style_main.css') }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='fontawesome-min-css'  href='{{ asset('css/font-awesome.min.css') }}' type='text/css' media='all' />
     {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> --}}
 
 
-    <script type='text/javascript' src='js/jquery-migrate1.4.1.min.js?'></script>
+    <script type='text/javascript' src='{{asset('js/jquery-migrate1.4.1.min.js')}}'></script>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var wpp_params = { "sampling_active": "0", "sampling_rate": "100", "ajax_url": "https:\/\/giupvieccici.vn\/wp-json\/wordpress-popular-posts\/v1\/popular-posts\/", "action": "update_views_ajax", "ID": "1182", "token": "bbc7e5de42", "debug": "" };
     /* ]]> */
     </script>
-    <script type='text/javascript' src='js/wpp-4.1.0v412.min.js'></script>
-    <script type='text/javascript' src='js/bootstrapv498.min.js'></script>
+    <script type='text/javascript' src='{{asset('js/wpp-4.1.0v412.min.js')}}'></script>
+    <script type='text/javascript' src='{{asset('js/bootstrapv498.min.js')}}'></script>
 </head>
 <header>
     <div class="top-bar">
@@ -86,12 +86,12 @@
                                     <li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-73"><a
                                             href="/">TRANG CHỦ</a></li>
                                     <li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220"><a
-                                            href="about">Giới Thiệu</a></li>
+                                            href="/about">Giới Thiệu</a></li>
                                     <li id="menu-item-373" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children menu-item-373"><a
                                             href="dichvu">Dịch vụ</a>
                                         <ul class="sub-menu">
                                             <li id="menu-item-1184" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1182 current_page_item menu-item-1184"><a
-                                                    href="dichvu/giadinh">GIÚP VIỆC GIA ĐÌNH</a></li>
+                                                    href="/dichvu/giadinh">GIÚP VIỆC GIA ĐÌNH</a></li>
                                             <li id="menu-item-1187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1187"><a
                                                     href="Dv_nguoi-gia.html">GIÚP VIỆC CHĂM NGƯỜI GIÀ</a></li>
                                             <li id="menu-item-1186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1186"><a
@@ -102,12 +102,12 @@
                                         </ul>
                                     </li>
                                     <li id="menu-item-621" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-621"><a
-                                            href="nhan_vien.html">Nhân viên</a></li>
+                                            href="/nhanvien">Nhân viên</a></li>
                                     <li id="menu-item-374" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-374"><a
-                                            href="tin_tuc.html">Tin tức</a></li>
+                                            href="/tintuc">Tin tức</a></li>
                                     <!-- <li id="menu-item-375" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-375"><a href="tuyen_dung.html">Tuyển dụng</a></li> -->
                                     <li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><a
-                                            href="lien-he">Liên hệ</a></li>
+                                            href="/lien-he">Liên hệ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -136,8 +136,8 @@
         </a>
     </div>
 </div>
-<script type='text/javascript' src='js/scripts504.js'></script>
-<script type='text/javascript' src='js/wp-embed498.min.js'></script>
+<script type='text/javascript' src='{{asset('js/scripts504.js')}}'></script>
+<script type='text/javascript' src='{{asset('js/wp-embed498.min.js')}}'></script>
 <footer>
     <div class="container">
         <div class="row footer-content">

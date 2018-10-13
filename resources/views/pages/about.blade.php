@@ -106,20 +106,6 @@
     </div>
 
 </section>
-<div class="clearfix"></div>
-<link href="css/phone.css" rel="stylesheet" type="text/css" />
-<div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon" style="right: -40px; bottom: 40px; display: block;position: fixed;z-index: 999">
-    <div class="phonering-alo-ph-circle"></div>
-    <div class="phonering-alo-ph-circle-fill"></div>
-    <a href="tel:+"></a>
-    <div class="phonering-alo-ph-img-circle">
-
-        <a href="tel:0918 725 089" class="pps-btn-img " title="Liên hệ">
-            <img src="https://i.imgur.com/v8TniL3.png" alt="Liên hệ" width="50" onmouseover="this.src = 'https://i.imgur.com/v8TniL3.png';"
-                onmouseout="this.src = 'https://i.imgur.com/v8TniL3.png';">
-        </a>
-    </div>
-</div>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var wpcf7 = {
