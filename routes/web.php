@@ -22,3 +22,7 @@ Route::get('dichvu/giadinh','PagesController@giupviec');
 Route::get('debug',function(){
     return view('pages.debug');
 });
+
+Route::get('/nhanvien/{ten}',function (){
+   return view('pages.nhanvien-chitiet');
+});

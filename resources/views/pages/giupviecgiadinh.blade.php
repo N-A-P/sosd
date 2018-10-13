@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
+    
 <section class="clearfix">
     <div class="container">
         <div class="col-md-8 singlee">
@@ -105,10 +105,10 @@
                     <p style="text-align: justify;">Web: <a href="index.html">https://giupviechtp.vn</a></p>
                 </div>
 
-
+            @include('layouts.lay2')
             </div>
         </div>
-        @include('info')
+
     </div>
 </section>
 @endsection

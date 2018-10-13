@@ -9,11 +9,11 @@
 </nav>
 @endsection
 
-@section('info') --}}
+@section('info') --}}   
     
 
     
-<div class="col-md-4">
+<div class="col-md-4 " style="">
     <aside>
         <h4 class="entry-title">FACEBOOK</h4>
         <!--Facebook page-->

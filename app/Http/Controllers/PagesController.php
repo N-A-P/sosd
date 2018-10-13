@@ -19,6 +19,6 @@ class PagesController extends Controller
        return view('pages.Dichvu');
    }
    public function giupviec(){
-       return view('pages.dcm');
+       return view('pages.giupviecgiadinh');
    }
 }
