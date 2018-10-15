@@ -22,7 +22,13 @@ Route::get('dichvu/giadinh','PagesController@giupviec');
 Route::get('debug',function(){
     return view('pages.debug');
 });
+Route::get('/tintuc','PagesController@tintuc');
+Route::get('/nhanvien/{id}','PagesController@chitietnhanvien');
+Route::get('/nhanvien','PagesController@nhanvien');
 
-Route::get('/nhanvien/{ten}',function (){
-   return view('pages.nhanvien-chitiet');
+/*admin*/
+Route::resource('/quanlynguoigiupviec','EmployeeController');
+Route::get('/admin','AdminController@login');
+Route::get('/asd',function(){
+    return view('admin.qly-themnguoigv');
 });

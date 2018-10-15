@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.header')
 @section('content')
     
 <section class="clearfix">
@@ -105,10 +105,11 @@
                     <p style="text-align: justify;">Web: <a href="index.html">https://giupviechtp.vn</a></p>
                 </div>
 
-            @include('layouts.lay2')
+           
             </div>
+            
         </div>
-
+        @include('layouts.lay2')    
     </div>
 </section>
 @endsection

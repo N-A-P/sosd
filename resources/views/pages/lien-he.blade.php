@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.header')
 @section('content')
        <script type="text/javascript">   
         jQuery(document).ready(function ($) {

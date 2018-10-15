@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <title>Giúp việc gia đình - Công ty TNHH Dịch vụ HTP</title>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="js/custom.js"></script>
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/owl.carousel.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+    <script src="{{asset('js/custom.js')}}"></script>
+    <link rel="icon" href="{{ asset('images/logoHTP.png') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('images/logoHTP.png') }}" type="image/x-icon" />
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -53,9 +53,9 @@
             </div>
             <div class="right-bar text-right">
                 <span class="social">
-                  <a target="_blank" href="https://www.facebook.com/laravel"> <img src="images/facebook.png"></a>
-                  <a target="_blank" href="https://www.twitter.com"><img src="images/twitter.png"></i></a>
-                  <a target="_blank" href="https://www.mail.google.com"><img src="images/ggplus.png"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/laravel"> <img src="{{asset('images/twitter.png')}}"></a>
+                  <a target="_blank" href="https://www.twitter.com"><img src="{{asset('images/twitter.png')}}"></i></a>
+                  <a target="_blank" href="https://www.mail.google.com"><img src="{{asset('images/ggplus.png')}}"></i></a>
 
                 </span>
             </div>
@@ -65,7 +65,7 @@
         <div class="container">
             <div class="col-md-3 col-sm-3 col-xs-10">
                 <div class="logo">
-                    <a href="/" title="Công ty TNHH Dịch vụ HTP"><img src="images/logoHTP.png"></a>
+                    <a href="/" title="Công ty TNHH Dịch vụ HTP"><img src="{{ asset('images/logoHTP.png') }}"></a>
                 </div>
             </div>
             <div class="col-md-9 col-sm-9 col-xs-2 toggle">
@@ -143,7 +143,7 @@
         <div class="row footer-content">
             <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
                 <div class="footer-img">
-                    <a href="/"><img src="images/logoHTP.png"></a>
+                    <a href="/"><img src="{{ asset('images/logoHTP.png') }}"></a>
                     <!-- images/logo-CiCi-2.png -->
                 </div>
                 <p class="thep"><strong>Công ty TNHH Dịch vụ HTP</strong> là một trong những công ty chuyên cung cấp

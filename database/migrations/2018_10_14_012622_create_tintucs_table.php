@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Tintuc extends Migration
+class CreateTintucsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class Tintuc extends Migration
      */
     public function up()
     {
-        Schema::create('tintuc',function(Blueprint $table ){
-            $table->increment('id');
-            $table->string('tintuc_tieude');
-            $table->text('tintuc_noidung');
-            $table->integer('tintuc_luotxem');
-            $table->string('tintuc_thumbnail');
+        Schema::create('tintucs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->longText('noidung');
+            $table->string('tieude');
+            $table->string('thumbnail');
+            $table->integer('luotxem');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class Tintuc extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('tintucs');
     }
 }

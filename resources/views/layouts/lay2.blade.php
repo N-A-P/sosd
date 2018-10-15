@@ -29,7 +29,7 @@
     <aside>
         <h4 class="entry-title">LIÊN HỆ</h4>
         <div class="contact">
-            <img src="images/hotline1.jpg" alt="anh" class="img-responsive">
+            <img src="{{ asset('images/hotline1.jpg') }}" alt="anh" class="img-responsive">
         </div>
     </aside>
     <aside>
