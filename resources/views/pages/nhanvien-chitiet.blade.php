@@ -19,7 +19,7 @@
 <nav class="breadcrumbs">
     <div class="container">
         <div class="breadcrumbs-text">
-            <span><span><a href="https://giupvieccici.vn/">Trang chủ</a> » <span class="breadcrumb_last">{{ $data[0]->ten }}</span></span></span>
+            <span><span><a href="/">Trang chủ</a> » <span class="breadcrumb_last">{{ $data[0]->ten }}</span></span></span>
         </div>
     </div>
 </nav>
@@ -72,7 +72,7 @@
                     <ul>
                         <li>Hotline: 0914 911 884 &#8211; 0963 584 111</li>
                         <li>Địa chỉ: số 10N03 , phố Thọ Tháp, Dịch Vọng, Cầu Giấy</li>
-                        <li>Web: <a href="https://giupvieccici.vn">https://giupvieccici.vn</a></li>
+                    <li>Web: <a href="{{route('/')}}"></a>sosd.me</li>
                     </ul>
                 </div>
                 <div class="fb-comments" data-href="https://www.facebook.com/dichvugiupviecnhauytin" data-numposts="5"></div>

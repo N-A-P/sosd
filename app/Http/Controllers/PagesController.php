@@ -14,7 +14,8 @@ class PagesController extends Controller
        return view('pages.about');
    }
    public function nhanvien(){
-    return view('pages.nhan-vien');
+       $data = nhanvien::all();
+    return view('pages.nhan-vien')->with('data',$data);
     }
    public function lienhe(){
        return view('pages.lien-he');
