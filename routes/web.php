@@ -26,9 +26,14 @@ Route::get('/tintuc','PagesController@tintuc');
 Route::get('/nhanvien/{id}','PagesController@chitietnhanvien');
 Route::get('/nhanvien','PagesController@nhanvien');
 
+
 /*admin*/
 Route::resource('/quanlynguoigiupviec','EmployeeController');
 Route::get('/admin','AdminController@login');
 Route::get('/asd',function(){
     return view('admin.qly-themnguoigv');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

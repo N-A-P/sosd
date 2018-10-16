@@ -21,6 +21,7 @@ class CreateNhanviensTable extends Migration
             $table->string('anh');
             $table->string('nganhnghe');
             $table->string('kinhnghiem');
+            $table->string('kinhnghiem_tomtat')->nullable;
             $table->timestamps();
         });
     }

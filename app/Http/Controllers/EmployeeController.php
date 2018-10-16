@@ -49,6 +49,7 @@ class EmployeeController extends Controller
         $nv->quequan = $request->input('quequan');
         $nv->nganhnghe = $request->input('nganhnghe');
         $nv->kinhnghiem = $request->input('kinhnghiem');
+        $nv->kinhnghiem_tomtat = $request->input('kinhnghiem_tomtat');
         $nv->save();
     
        return redirect('/asd');

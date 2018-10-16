@@ -35,6 +35,10 @@
                     {{ Form::text('nganhnghe','', ['class'=>'form-control', 'placeholder'=>'Ngành nghề']) }}
                 </div>
                 <div class="form-group">
+                        {{ Form::label('title','Kinh nghiệm(tóm tắt)') }}
+                        {{ Form::text('kinhnghiem_tomtat','', [ 'class'=>'form-control','placeholder'=>'Kinh nghiệm']) }}
+                    </div>
+                <div class="form-group">
                     {{ Form::label('title','Kinh nghiệm') }}
                     {{ Form::textarea('kinhnghiem','', ['id'=>'editor','class'=>'form-control', 'placeholder'=>'Kinh nghiệm']) }}
                 </div>
@@ -48,40 +52,7 @@
                     </div> --}}
                     <button type="submit" class="btn btn-primary" name="ok">Thêm</button>
             {!! Form::close() !!}
-        {{-- <form action="/quanlynguoigiupviec" method="GET">
-            <div class="form-group">
-                <label>Họ Tên</label>
-                <input type="text" class="form-control" placeholder="Họ tên" name="hoten">
-            </div>
-            <div class="form-group">
-                    <label>Năm sinh</label>
-                    <input type="text" class="form-control" placeholder="Năm sinh" name="namsinh">
-            </div>
-            <div class="form-group">
-                    <label>Quê quán</label>
-                    <input type="text" class="form-control" placeholder="Quê quán" name="que">
-            </div>
-            <div class="form-group">
-                <label>Ngành nghề</label>
-                <select class="form-control" name="nghe" >
-                    <option>Giúp việc nhà</option>
-                    <option>Giúp việc văn phòng</option>
-                    <option>Trông trẻ</option>
-                    <option>Chăm người già</option>
-                    <option>Chăm người bệnh</option>
-                </select>
-            </div>
-            <div class="form-group">
-                    <label>Ảnh</label>
-                    <input type="file" class="form-control-file" name="anh">
-                  </div>
-          
-            <div class="form-group">
-                <label>Kinh nghiệm</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="kinhnghiem"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" name="ok">Thêm</button>
-        </form> --}}
+       
 
     </div>
     <script>

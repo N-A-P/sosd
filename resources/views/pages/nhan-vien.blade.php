@@ -23,39 +23,36 @@
         </div>
     </div>
 </nav>
-<section class="clearfix">
+<section class="noidung">
     <div class="container">
-        <div class="col-md-8 singlee">
-            
+        <div class="col-md-9 single">
             <h2 class="title">Nhân viên</h2>
-            <div class="entry-content"></div>
-            @foreach ($data as $i)
+            <div class="clear-fix">  </div>
+            @for ($i=0;$i<count($data);$i++)
             <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="{{ '/nhanvien'.$i->id }}">
-                <img width="515" height="286" src="{{asset("storage/app/public/images/$i->anh")}}" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image"
-                        alt="" /></a>
-                <h3 class="title"><a href="/nhanvien/{{$i->id}}">{{ $i->ten }}</a></h3>
-                <p class="home_summary"> {{ $i->ten }} – {{ $i->namsinh}} Quê: {{ $i->quequan }} Kinh nghiệm: 6 năm chăm bé Cô tắm cho
-                    bé:...</p>
+                <a href="{{ '/nhanvien'.$data[$i]->id }}">
+                <img style="width:234;height:118px" src="{{asset( 'storage/images/'.$data[$i]->anh) }}" 
+                class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
+                <h3 class="title"><a href="/nhanvien/{{$data[$i]->id}}">{{ $data[$i]->ten }}</a></h3>
+                <p class="home_summary"> {{ $data[$i]->ten }} – {{ $data[$i]->namsinh}} Quê: {{ $data[$i]->quequan }} Kinh nghiệm:{{$data[$i]->kinhnghiem_tomtat}}...</p>
                 <div class="time-more">
-                    <div class="time pull-left">{{ $i->create_at }}</div>
-                    <div class="pull-right"><a href="/nhanvien/{{$i->id}}"><span>Xem chi tiết</span></a></div>
+                    <div class="time pull-left">{{$arr['b'.$i][0]}}</div>
+                    <div class="pull-right"><a href="/nhanvien/{{$data[$i]->id}}"><span>Xem chi tiết</span></a></div>
                 </div>
             </div>
-            @endforeach
-           
-
-
+            @endfor
+            
+          
             <div class="pagination">
-                <span aria-current='page' class='page-numbers current'>1</span>
-                <!-- <a class='page-numbers' href='https://giupvieccici.vn/category/nhan-vien//page/2'>2</a> -->
-                <a class='page-numbers' href='#'>2</a>
-                <a class='page-numbers' href='#'>3</a>
-                <span class="page-numbers dots">&hellip;</span>
-                <a class='page-numbers' href='#'>11</a>
-                <a class="next page-numbers" href="#">Trang sau &raquo;</a> </div>
+                <style>
+                    .pagination{
+                        align-self: center;
+                    }
+                </style>
+                {{ $data->links() }}
+            </div>
         </div>
-       @include('layouts.lay2')
+            @include('layouts.lay2')
     </div>
 </section>
 @endsection

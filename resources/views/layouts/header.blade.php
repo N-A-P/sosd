@@ -53,7 +53,7 @@
             </div>
             <div class="right-bar text-right">
                 <span class="social">
-                  <a target="_blank" href="https://www.facebook.com/laravel"> <img src="{{asset('images/twitter.png')}}"></a>
+                  <a target="_blank" href="https://www.facebook.com/laravel"> <img src="{{asset('images/facebook.png')}}"></a>
                   <a target="_blank" href="https://www.twitter.com"><img src="{{asset('images/twitter.png')}}"></i></a>
                   <a target="_blank" href="https://www.mail.google.com"><img src="{{asset('images/ggplus.png')}}"></i></a>
 

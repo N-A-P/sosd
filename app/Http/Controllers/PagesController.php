@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\tintuc;
 use App\nhanvien;
 use Illuminate\Http\Request;
-
+use DB;
 class PagesController extends Controller
 {
    public function index(){
@@ -14,8 +14,13 @@ class PagesController extends Controller
        return view('pages.about');
    }
    public function nhanvien(){
-       $data = nhanvien::all();
-    return view('pages.nhan-vien')->with('data',$data);
+       $data = nhanvien::orderBy('id','desc')->paginate(12);
+       $arr = array();
+       for($i = 0; $i < count($data); $i++){
+          $arr['b'.$i] = explode(" ",$data[$i]->created_at);
+       }
+
+    return view('pages.nhan-vien')->with('data',$data)->with('arr',$arr);
     }
    public function lienhe(){
        return view('pages.lien-he');
@@ -29,10 +34,21 @@ class PagesController extends Controller
        return view('pages.tintuc')->with('data',$data);
    }
    public function chitietnhanvien($id){
-
        $data = nhanvien::where('id',$id)->get();
-       $array = preg_split ("/$\R?^/m", $data[0]->kinhnghiem);
-       return view('pages.nhanvien-chitiet')->with('data',$data)->with('exp',$array);
+       $more = nhanvien::all()->random(7);
+       $check =false;
+       for($i = 0; $i < count($more); $i++){
+            $arr['b'.$more[$i]->id] = explode(" ",$more[$i]->created_at);
+            if( $more[$i]==$id || ($i == 6 && $check == false) )
+            {
+                unset($more[$i]);
+                $check = true;
+            }
+           
+            
+        }
+        
+       return view('pages.nhanvien-chitiet')->with('data',$data)->with('more',$more)->with('arr',$arr);
    }
    public function giupviec(){
        return view('pages.giupviecgiadinh');

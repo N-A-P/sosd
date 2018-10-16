@@ -13,7 +13,7 @@
     
 
     
-<div class="col-md-4 " style="">
+<div class="col-md-3 " style="">
     <aside>
         <h4 class="entry-title">FACEBOOK</h4>
         <!--Facebook page-->

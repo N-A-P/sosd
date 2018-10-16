@@ -12,6 +12,7 @@ class nhanvien extends Model
         'namsinh',
         'quequan',
         'nganhnghe',
-        'kinhnghiem'
+        'kinhnghiem',
+        'kinhnghiem_tomtat'
     ];
 }
