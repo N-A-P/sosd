@@ -136,179 +136,29 @@
 	<div class="container">
 		<div class="header"><h2>Nhân viên giúp việc</h2></div>
 		<div class="row">
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
+			@foreach ($maids as $m)
+				
+			
+			<div class="col-md-3 col-sm-6 col-xs-6 block-item">
 				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/1.jpg"><img width="5136" height="3104" src="images/1.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset=" images/1.jpg 5136w, images/1.jpg 300w, images/1.jpg 768w, images/1.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
+					<div class="intro-img"><a  href="{{ asset( 'storage/images/'.$m->anh)}}"><img width="5136" height="3104" src="{{ asset( 'storage/images/'.$m->anh)}}" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset=" {{ asset( 'storage/images/'.$m->anh)}} 5136w, images/1.jpg 300w, {{ asset( 'storage/images/'.$m->anh)}} 768w, images/1.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
 					<div class="infor">
 						<div class="model">
-							<h3 class="name-model">NGUYỄN THỊ CANH</h3>
-							<p>Sinh năm: 1960</p>
-							<p>Địa chỉ : Thái Bình</p>
-							<p>Kinh nghiệm : </p>
-							<!-- https://giupvieccici.vn/nguyen-thi-canh/ -->
-							<a href="images/1.jpg"><span>Xem chi tiết</span></a>
+						<h3 class="name-model">{{$m->ten}}</h3>
+							<p>Sinh năm: {{$m->namsinh}}</p>
+							<p>Địa chỉ : {{$m->quequan}}</p>
+							<p>Kinh nghiệm :{{$m->kinhnghiem_tomtat}} </p>
+							<a href="{{ asset( 'storage/images/'.$m->anh)}}"><span>Xem chi tiết</span></a>
 						</div>
 					</div>
 				</div>
 			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/2.jpg"><img width="5136" height="3104" src="images/2.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/2.jpg 5136w, images/2.jpg 300w, images/2.jpg 768w, images/2.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">ĐẶNG THỊ SEN</h3>
-							<p>Sinh năm: 1960</p>
-							<p>Địa chỉ : Nghệ An</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/2.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/3.jpg"><img width="5136" height="3104" src="images/3.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/3.jpg 5136w, images/3.jpg 300w, images/3.jpg 768w, images/3.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">ĐÀO THỊ CẢNH</h3>
-							<p>Sinh năm: 1959</p>
-							<p>Địa chỉ : Thanh Hóa</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/3.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/4.jpg"><img width="5136" height="3104" src="images/4.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/4.jpg 5136w, images/4.jpg 300w, images/4.jpg 768w, images/4.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">LÊ THỊ TỐ NGA</h3>
-							<p>Sinh năm: 1983</p>
-							<p>Địa chỉ : Phú Thọ</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/4.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/5.jpg"><img width="5136" height="3104" src="images/5.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/5.jpg 5136w, images/5.jpg 300w, images/5.jpg 768w,images/5.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">TRẦN THỊ DỊU</h3>
-							<p>Sinh năm: 1962</p>
-							<p>Địa chỉ : Thái Nguyên</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/5.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/6.jpg"><img width="5136" height="3104" src="images/6.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/6.jpg 5136w, images/6.jpg 300w, images/6.jpg 768w, images/6.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">VŨ THỊ CHANH</h3>
-							<p>Sinh năm: 1962</p>
-							<p>Địa chỉ : Phú Thọ</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/6.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/7.jpg"><img width="5136" height="3104" src="images/7.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/7.jpg 5136w, images/7.jpg 300w, images/7.jpg 768w, images/7.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">TRẦN THỊ MẬN</h3>
-							<p>Sinh năm: 1957</p>
-							<p>Địa chỉ : Nghệ An</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/7.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/8.jpg"><img width="5136" height="3104" src="images/8.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/8.jpg 5136w, images/8.jpg 300w, images/8.jpg 768w, images/8.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">NGUYỄN THỊ NGOÃN</h3>
-							<p>Sinh năm: 1971</p>
-							<p>Địa chỉ : Thái Bình</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/8.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/9.jpg"><img width="5136" height="3104" src="images/9.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/9.jpg 5136w, images/9.jpg 300w, images/9.jpg 768w, images/9.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">DƯƠNG THỊ LƯƠNG</h3>
-							<p>Sinh năm: 1954</p>
-							<p>Địa chỉ : Nam Định</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/9.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/10.jpg"><img width="5136" height="3104" src="images/10.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/10.jpg 5136w, images/10.jpg 300w, images/10.jpg 768w, images/10.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">LÂM THỊ TOAN</h3>
-							<p>Sinh năm: 1968</p>
-							<p>Địa chỉ : Cao Bằng</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/10.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/11.jpg"><img width="5136" height="3104" src="images/11.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/11.jpg 5136w, images/11.jpg 300w, images/11.jpg 768w, images/11.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">NGUYỄN THỊ HỢP</h3>
-							<p>Sinh năm: 1950</p>
-							<p>Địa chỉ : Thanh Hóa</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/11.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 block-item">
-				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="images/12.jpg"><img width="5136" height="3104" src="images/12.jpg" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset="images/12.jpg 5136w, images/12.jpg 300w, images/12.jpg 768w, images/12.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
-					<div class="infor">
-						<div class="model">
-							<h3 class="name-model">NGUYỄN NGỌC CHÂU</h3>
-							<p>Sinh năm: 1997</p>
-							<p>Địa chỉ : Thanh Hóa</p>
-							<p>Kinh nghiệm : </p>
-							<a href="images/12.jpg"><span>Xem chi tiết</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-							</div>
+			@endforeach
+								
+		</div>
 		
 			<!-- Print a link to this category -->
-			<a href="index.html" title="Category Name" class="btn read-more">Xem thêm</a>
+			<a href="/" title="Category Name" class="btn read-more">Xem thêm</a>
 
 	</div>
 </div>

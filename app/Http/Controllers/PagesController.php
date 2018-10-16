@@ -8,7 +8,9 @@ use DB;
 class PagesController extends Controller
 {
    public function index(){
-        return view('pages.index');
+      
+        $maids = nhanvien::all()->random(12);
+        return view('pages.index')->with('maids',$maids);
    }
    public function about(){
        return view('pages.about');
@@ -43,11 +45,8 @@ class PagesController extends Controller
             {
                 unset($more[$i]);
                 $check = true;
-            }
-           
-            
-        }
-        
+            } 
+        }        
        return view('pages.nhanvien-chitiet')->with('data',$data)->with('more',$more)->with('arr',$arr);
    }
    public function giupviec(){
