@@ -148,7 +148,7 @@
 							<p>Sinh năm: {{$m->namsinh}}</p>
 							<p>Địa chỉ : {{$m->quequan}}</p>
 							<p>Kinh nghiệm :{{$m->kinhnghiem_tomtat}} </p>
-							<a href="{{ asset( 'storage/images/'.$m->anh)}}"><span>Xem chi tiết</span></a>
+						<a href="{{route('pages.chitietnhanvien',$m->id)}}"><span>Xem chi tiết</span></a>
 						</div>
 					</div>
 				</div>
@@ -167,87 +167,16 @@
 		<div class="content clearfix">
 			<div class="header"><h2>Tin tức nổi bật</h2></div>
 			<div class="clearfix"></div>
+								@for ($i =0; $i<9; $i++)
 								<div class="col-md-4 col-sm-6 frame_left item">
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-					<a href="#" title="Sinh viên và công việc “giúp việc gia đình”" class="thumb">
-						<img width="515" height="286" src="images/t1.jpg" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-					<!-- https://giupvieccici.vn/sinh-vien-va-cong-viec-giup-viec-gia-dinh/ -->
-						<h3 class="title"><a href="#" title="Sinh viên và công việc “giúp việc gia đình”">Sinh viên và công việc “giúp việc gia đình”</a></h3>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-4 col-sm-6 frame_left item">
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-				<!-- https://giupvieccici.vn/kinh-nghiem-giup-be-hoc-gioi-ngoai-ngu/ -->
-					<a href="#" title="Kinh nghiệm giúp bé học giỏi ngoại ngữ" class="thumb"><img width="515" height="286" src="images/t2.jpg" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-						<h3 class="title"><a href="#" title="Kinh nghiệm giúp bé học giỏi ngoại ngữ">Kinh nghiệm giúp bé học giỏi ngoại ngữ</a></h3>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-4 col-sm-6 frame_left item">
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-					<a href="#" class="thumb"><img width="515" height="286" src="images/t3.png" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-						<h3 class="title"><a href="#" title="Bộ ảnh cưới đẹp lung linh của Trường Giang – Nhã Phương">Bộ ảnh cưới đẹp lung linh của Trường Giang – Nhã Phương</a></h3>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-4 col-sm-6 frame_left item">
-								<!-- https://giupvieccici.vn/tri-nam-hieu-qua-tu-thien-nhien/ -->
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-					<a href="#" title="Trị nám hiệu quả từ thiên nhiên" class="thumb"><img width="515" height="286" src="images/t4.png" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-						<h3 class="title"><a href="#" title="Trị nám hiệu quả từ thiên nhiên">Trị nám hiệu quả từ thiên nhiên</a></h3>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-4 col-sm-6 frame_left item">
-								<!-- https://giupvieccici.vn/bi-quyet-phong-thuy-mang-tai-loc-vao-nha/ -->
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-					<a href="#" title="Bí quyết phong thủy mang tài lộc vào nhà" class="thumb"><img width="515" height="286" src="images/t5.png" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-						<h3 class="title"><a href="#" title="Bí quyết phong thủy mang tài lộc vào nhà">Bí quyết phong thủy mang tài lộc vào nhà</a></h3>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-4 col-sm-6 frame_left item">
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-				<!-- https://giupvieccici.vn/mot-so-benh-thuong-gap-o-tre-vao-mua-thu-trieu-chung-va-cach-phong-ngua/ -->
-					<a href="#" title="Một số bệnh thường gặp ở trẻ vào mùa thu, triệu chứng và cách phòng ngừa" class="thumb"><img width="515" height="286" src="images/t6.png" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-						<h3 class="title"><a href="#" title="Một số bệnh thường gặp ở trẻ vào mùa thu, triệu chứng và cách phòng ngừa">Một số bệnh thường gặp ở trẻ vào mùa thu, triệu chứng và cách phòng ngừa</a></h3>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-4 col-sm-6 frame_left item">
-								<!-- https://giupvieccici.vn/cach-lam-mon-ca-kho-nghe-ngon-nhu-dau-bep/ -->
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-					<a href="#" title="Cách làm món cá kho nghệ ngon như đầu bếp" class="thumb"><img width="515" height="286" src="images/t7.png" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-						<h3 class="title"><a href="#" title="Cách làm món cá kho nghệ ngon như đầu bếp">Cách làm món cá kho nghệ ngon như đầu bếp</a></h3>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-4 col-sm-6 frame_left item">
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-				<!-- https://giupvieccici.vn/am-ap-nhu-vong-tay-me/ -->
-					<a href="#" title="Ấm áp như vòng tay mẹ" class="thumb"><img width="515" height="286" src="images/t8.png" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-						<h3 class="title"><a href="#" title="Ấm áp như vòng tay mẹ">Ấm áp như vòng tay mẹ</a></h3>
-					</div>
-				</div>
-			</div>
-								<div class="col-md-4 col-sm-6 frame_left item">
-				<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-				<!-- https://giupvieccici.vn/cach-do-long-nguoi/ -->
-					<a href="#" title="Cách đo lòng người" class="thumb"><img width="515" height="286" src="images/t9.png" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-					<div class="effect">
-						<h3 class="title"><a href="#" title="Cách đo lòng người">Cách đo lòng người</a></h3>
-					</div>
-				</div>
-			</div>
+									<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
+										<a href="#" title="Kinh nghiệm giúp bé học giỏi ngoại ngữ" class="thumb"><img width="515" height="286" src="images/t2.jpg" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
+										<div class="effect">
+											<h3 class="title"><a href="#" title="Kinh nghiệm giúp bé học giỏi ngoại ngữ">Kinh nghiệm giúp bé học giỏi ngoại ngữ</a></h3>
+										</div>
+									</div>
+								</div>
+								@endfor
 			
 												</div>
 										</div>

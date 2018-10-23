@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" >
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://cdn.ckeditor.com/ckeditor5/11.1.0/classic/ckeditor.js"></script>
-</head>
+   
+</head> 
+<body>--}}
 
-<body>
-    <div class="container col col-md-5">
+@extends('layouts.adheader')
+@section('content')
+    <div class="content-wrapper">
+    <div class="container col col-md-4">
             {!! Form::open(['action' => 'EmployeeController@store','method'=> 'POST','enctype'=>'multipart/form-data']) !!}
             {{ csrf_field() }}
         
@@ -55,6 +57,8 @@
        
 
     </div>
+    </div>
+    <script src="{{asset('js/ckeditor.js')}}"></script>
     <script>
         ClassicEditor
             .create(document.querySelector('#editor'))
@@ -62,6 +66,4 @@
                 console.error(error);
             });
     </script>
-</body>
-
-</html>
+@endsection

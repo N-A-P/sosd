@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <title>Giúp việc gia đình - Công ty TNHH Dịch vụ HTP</title>
     <script src="{{asset('js/jquery.min.js')}}"></script>
+    <base href="{{asset('')}}">
     <script src="{{asset('js/owl.carousel.js')}}"></script>
-    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}" />
     <script src="{{asset('js/custom.js')}}"></script>
     <link rel="icon" href="{{ asset('images/logoHTP.png') }}" type="image/x-icon" />
     <link rel="shortcut icon" href="{{ asset('images/logoHTP.png') }}" type="image/x-icon" />
@@ -25,11 +26,11 @@
             padding: 0 !important;
         }
     </style>
-    <link rel='stylesheet' id='contact-form-7-css' href='{{ asset('css/styles.css') }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='{{ asset('css/style.css') }}' type='text/css' media='all' />
     <link rel='stylesheet' id='wordpress-popular-posts-css-css' href='{{ asset('css/wpp.css') }}' type='text/css' media='all' />
     <link rel='stylesheet' id='bootstrap-style-css' href='{{ asset('css/bootstrap.min.css') }}' type='text/css' media='all' />
     <link rel='stylesheet' id='owl-style-css' href='{{ asset('assets/owl.carousel.min.css') }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='main-style-css' href='{{ asset('css/style_main.css') }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='main-style-css' href="css/style_main.css" type='text/css' media='all' />
     <link rel='stylesheet' id='fontawesome-min-css'  href='{{ asset('css/font-awesome.min.css') }}' type='text/css' media='all' />
     {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> --}}
 
@@ -46,8 +47,7 @@
 <header>
     <div class="top-bar">
         <div class="container">
-            <div class="left-bar hidden-md"><span class="x-phone"><i class="fa fa-phone" style="margin-right: 2px"></i>0918
-                    725 089</span></div>
+            <div class="left-bar hidden-md"><span class="x-phone"><i class="fa fa-phone" style="margin-right: 2px"></i>077883754</span></div>
             <div class="left-bar hidden-xs hidden-sm">
                 <span><i class="fa fa-map-marker"></i> Số 100 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội</span>
             </div>
@@ -86,28 +86,27 @@
                                     <li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-73"><a
                                             href="/">TRANG CHỦ</a></li>
                                     <li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220"><a
-                                            href="/about">Giới Thiệu</a></li>
+                                    href="{{route('pages.about')}}">Giới Thiệu</a></li>
                                     <li id="menu-item-373" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children menu-item-373"><a
-                                            href="dichvu">Dịch vụ</a>
+                                            href="{{route('pages.dichvu')}}">Dịch vụ</a>
                                         <ul class="sub-menu">
                                             <li id="menu-item-1184" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1182 current_page_item menu-item-1184"><a
-                                                    href="/dichvu/giadinh">GIÚP VIỆC GIA ĐÌNH</a></li>
+                                                    href="{{route('pages.giupviec')}}">GIÚP VIỆC GIA ĐÌNH</a></li>
                                             <li id="menu-item-1187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1187"><a
                                                     href="Dv_nguoi-gia.html">GIÚP VIỆC CHĂM NGƯỜI GIÀ</a></li>
                                             <li id="menu-item-1186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1186"><a
                                                     href="Dv_trongtre.html">GIÚP VIỆC CHĂM BÉ</a></li>
                                             <li id="menu-item-1188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1188"><a
                                                     href="Dv_giupviectheogio.html">GIÚP VIỆC THEO GIỜ</a></li>
-
                                         </ul>
                                     </li>
                                     <li id="menu-item-621" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-621"><a
-                                            href="/nhanvien">Nhân viên</a></li>
+                                            href="{{route('pages.nhanvien')}}">Nhân viên</a></li>
                                     <li id="menu-item-374" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-374"><a
-                                            href="/tintuc">Tin tức</a></li>
+                                            href="tintuc">Tin tức</a></li>
                                     <!-- <li id="menu-item-375" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-375"><a href="tuyen_dung.html">Tuyển dụng</a></li> -->
                                     <li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><a
-                                            href="/lien-he">Liên hệ</a></li>
+                                            href="{{route('pages.lienhe')}}">Liên hệ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -130,9 +129,10 @@
     <a href="tel:+"></a>
     <div class="phonering-alo-ph-img-circle">
 
-        <a href="tel:0918 725 089" class="pps-btn-img " title="Liên hệ">
-            <img src="https://i.imgur.com/v8TniL3.png" alt="Liên hệ" width="50" onmouseover="this.src = 'https://i.imgur.com/v8TniL3.png';"
-                onmouseout="this.src = 'https://i.imgur.com/v8TniL3.png';">
+        <a href="tel:0778833754" class="pps-btn-img " title="Liên hệ">
+            <img src="{{asset('images/img.png')}}"
+             alt="Liên hệ" width="50" onmouseover="this.src = '{{asset('images/img.png')}}';"
+              onmouseout="this.src = '{{asset('images/img.png')}}';">
         </a>
     </div>
 </div>

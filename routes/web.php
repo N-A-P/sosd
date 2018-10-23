@@ -15,25 +15,28 @@ Route::get('/a', function () {
     return view('welcome');
 });
 Route::get('/','PagesController@index');
-Route::get('about','PagesController@about');
-Route::get('lien-he','PagesController@lienhe');
-Route::get('dichvu','PagesController@dichvu');
-Route::get('dichvu/giadinh','PagesController@giupviec');
+Route::get('/about','PagesController@about')->name('pages.about');
+Route::get('/lien-he','PagesController@lienhe')->name('pages.lienhe');
+Route::get('/dichvu','PagesController@dichvu')->name('pages.dichvu');
+Route::get('/dichvu/giadinh','PagesController@giupviec')->name('pages.giupviec');
 Route::get('debug',function(){
     return view('pages.debug');
 });
 Route::get('/tintuc','PagesController@tintuc');
-Route::get('/nhanvien/{id}','PagesController@chitietnhanvien');
-Route::get('/nhanvien','PagesController@nhanvien');
+Route::get('/tintuc/{id}','PagesController@tintuc_chitiet')->name('pages.tintuc-chitiet');
+Route::get('/nhanvien/{id}','PagesController@chitietnhanvien')->name('pages.chitietnhanvien');
+Route::get('/nhanvien','PagesController@nhanvien')->name('pages.nhanvien');
 
 
 /*admin*/
 Route::resource('/quanlynguoigiupviec','EmployeeController');
-Route::get('/admin','AdminController@login');
 Route::get('/asd',function(){
     return view('admin.qly-themnguoigv');
 });
 
 Auth::routes();
-
-Route::get('/dashboard', 'HomeController@index');
+Route::resource('/quanlytintuc','TinTucController');
+Route::get('/addnews',function(){
+    return view('admin.themTintuc');
+});
+Route::get('/admin', 'DashboardController@index');

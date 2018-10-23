@@ -5,36 +5,46 @@ use App\tintuc;
 use App\nhanvien;
 use Illuminate\Http\Request;
 use DB;
+
 class PagesController extends Controller
 {
-   public function index(){
-      
+   public function index(){      
         $maids = nhanvien::all()->random(12);
         return view('pages.index')->with('maids',$maids);
    }
    public function about(){
-       return view('pages.about');
+       $news  = tintuc::orderBy('id','desc')->take(5)->get();
+       return view('pages.about')->with('news',$news);
    }
-   public function nhanvien(){
-       $data = nhanvien::orderBy('id','desc')->paginate(12);
-       $arr = array();
-       for($i = 0; $i < count($data); $i++){
-          $arr['b'.$i] = explode(" ",$data[$i]->created_at);
-       }
-
-    return view('pages.nhan-vien')->with('data',$data)->with('arr',$arr);
-    }
+  
    public function lienhe(){
-       return view('pages.lien-he');
+    $news  = tintuc::orderBy('id','desc')->take(5)->get();
+       return view('pages.lien-he')->with('news',$news);
    }
    public function dichvu(){
-       return view('pages.Dichvu');
+    $news  = tintuc::orderBy('id','desc')->take(5)->get();
+       return view('pages.Dichvu')->with('news',$news);
    }
    public function tintuc(){
-        
+    $news  = tintuc::orderBy('id','desc')->take(5)->get();
         $data = tintuc::all('id', 'tieude', 'thumbnail');
-       return view('pages.tintuc')->with('data',$data);
+       return view('pages.tintuc')->with('data',$data)->with('news',$news);
    }
+   public function tintuc_chitiet($id){
+        $data = tintuc::find($id);
+        $news  = tintuc::orderBy('id','desc')->take(5)->get();      
+       return view('pages.tintuc-chitiet')->with('data',$data)->with('news',$news);
+   }
+
+   public function nhanvien(){
+        $news  = tintuc::orderBy('id','desc')->take(5)->get();
+        $data = nhanvien::orderBy('id','desc')->get();
+        $arr = array();
+        for($i = 0; $i < count($data); $i++){
+        $arr['b'.$i] = explode(" ",$data[$i]->created_at);
+        }
+        return view('pages.nhan-vien')->with('data',$data)->with('arr',$arr)->with('news',$news);
+    }
    public function chitietnhanvien($id){
        $data = nhanvien::where('id',$id)->get();
        $more = nhanvien::all()->random(7);
@@ -46,10 +56,12 @@ class PagesController extends Controller
                 unset($more[$i]);
                 $check = true;
             } 
-        }        
-       return view('pages.nhanvien-chitiet')->with('data',$data)->with('more',$more)->with('arr',$arr);
+        }
+        $news  = tintuc::orderBy('id','desc')->take(5)->get();        
+       return view('pages.nhanvien-chitiet')->with('data',$data)->with('more',$more)->with('arr',$arr)->with('news',$news);
    }
    public function giupviec(){
-       return view('pages.giupviecgiadinh');
+        $news  = tintuc::orderBy('id','desc')->take(5)->get();
+       return view('pages.giupviecgiadinh')->with('news',$news);
    }
 }

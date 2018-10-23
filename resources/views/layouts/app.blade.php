@@ -8,7 +8,13 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
+    <link href="{{asset("css/bootstrap.min.css")}}" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+   <link href="{{asset('css/font-awesome.css')}}" rel="stylesheet" />
+    <!-- MORRIS CHART STYLES-->
+   <link href="{{asset('js/morris-0.4.3.min.css')}}" rel="stylesheet" />
+     <!-- CUSTOM STYLES-->
+    <link href="{{asset('css/custom.css')}}" rel="stylesheet" />
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
