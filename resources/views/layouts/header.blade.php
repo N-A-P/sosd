@@ -36,11 +36,11 @@
 
 
     <script type='text/javascript' src='{{asset('js/jquery-migrate1.4.1.min.js')}}'></script>
-    <script type='text/javascript'>
+    {{-- <script type='text/javascript'>
         /* <![CDATA[ */
         var wpp_params = { "sampling_active": "0", "sampling_rate": "100", "ajax_url": "https:\/\/giupvieccici.vn\/wp-json\/wordpress-popular-posts\/v1\/popular-posts\/", "action": "update_views_ajax", "ID": "1182", "token": "bbc7e5de42", "debug": "" };
     /* ]]> */
-    </script>
+    </script> --}}
     <script type='text/javascript' src='{{asset('js/wpp-4.1.0v412.min.js')}}'></script>
     <script type='text/javascript' src='{{asset('js/bootstrapv498.min.js')}}'></script>
 </head>
