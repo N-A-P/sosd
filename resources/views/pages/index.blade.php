@@ -141,7 +141,7 @@
 			
 			<div class="col-md-3 col-sm-6 col-xs-6 block-item">
 				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="{{ asset( 'storage/images/'.$m->anh)}}"><img width="5136" height="3104" src="{{ asset( 'storage/images/'.$m->anh)}}" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset=" {{ asset( 'storage/images/'.$m->anh)}} 5136w, images/1.jpg 300w, {{ asset( 'storage/images/'.$m->anh)}} 768w, images/1.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></a></div>
+					<div class="intro-img"><a  href="{{ asset( 'storage/images/'.$m->anh)}}"><img width="5136" height="3104" src="{{ asset( 'storage/images/'.$m->anh)}}" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" /></a></div>
 					<div class="infor">
 						<div class="model">
 						<h3 class="name-model">{{$m->ten}}</h3>
