@@ -31,7 +31,7 @@
             @for ($i=0;$i<count($data);$i++)
             <div class="col-md-4 col-sm-6 col-xs-6">
                 <a href="{{ '/nhanvien/'.$data[$i]->id }}">
-                <img style="width:234;height:118px" src="{{asset( 'storage/images/'.$data[$i]->anh) }}" 
+                <img style="width:234px;height:118px" src="{{asset( 'storage/images/'.$data[$i]->anh) }}" 
                 class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
                 <h3 class="title"><a href="/nhanvien/{{$data[$i]->id}}">{{ $data[$i]->ten }}</a></h3>
                 <p class="home_summary"> {{ $data[$i]->ten }} – {{ $data[$i]->namsinh}} Quê: {{ $data[$i]->quequan }} Kinh nghiệm:{{$data[$i]->kinhnghiem_tomtat}}...</p>
@@ -49,7 +49,7 @@
                         align-self: center;
                     }
                 </style>
-                {{--$data->links() --}}
+                {{$data->links()}}
             </div>
         </div>
             @include('layouts.lay2')

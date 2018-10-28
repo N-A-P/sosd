@@ -39,7 +39,7 @@ class PagesController extends Controller
 
    public function nhanvien(){
         $news  = tintuc::orderBy('id','desc')->take(5)->get();
-        $data = nhanvien::orderBy('id','desc')->get();
+        $data = nhanvien::orderBy('id','desc')->paginate(12);
         $arr = array();
         for($i = 0; $i < count($data); $i++){
         $arr['b'.$i] = explode(" ",$data[$i]->created_at);
