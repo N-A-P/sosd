@@ -22,7 +22,7 @@ div.news-more div.news-more-title{text-transform: uppercase;font-size: 14px;colo
     img{max-width: 100%; height: auto;}
     body{line-height: 1.5;background:white;}
     /*css header*/
-    header .top-bar{background:#fc832a;padding: 3px 0px;}
+    header .top-bar{background:#337ab7;padding: 3px 0px;}
     header .top-bar .social a{color: white}
     header .top-bar .social a i{background: #47762e;width: 26px;height: 26px;border-radius: 100px;padding: 7px;}
     header .top-bar .left-bar{float: left;color: white}
@@ -42,9 +42,9 @@ div.news-more div.news-more-title{text-transform: uppercase;font-size: 14px;colo
     nav.breadcrumbs {
         padding: 5px 0;
         background: #f6ededcf;
-        color: #fc832a;
+        color: #337ab7;
     }
-    nav.breadcrumbs a{color: #fc832a;}
+    nav.breadcrumbs a{color: #337ab7;}
     .x-phone
     {
         font-family: initial;
@@ -77,14 +77,14 @@ div.news-more div.news-more-title{text-transform: uppercase;font-size: 14px;colo
     border-bottom: 1px solid #fff;
 }
 .navbar{margin-bottom: 0px;}
-.navbar-inverse .navbar-nav>li>a{color: #fc832a}
+.navbar-inverse .navbar-nav>li>a{color: #337ab7}
 .navbar-inverse .navbar-nav>li>a:hover{color:#47762e;    }
 
 .navbar-inverse .navbar-nav>li>a:hover li{background: red;color: #0de4d7}
 .navbar-brand{line-height:50px;height:50px;padding:2px 14px;font-family:arial;font-size:13px;font-weight:bold;text-transform:uppercase;}
 .navbar-collapse{padding-left:0;padding-right:0;}
 .navbar-nav li:hover .sub-menu{display:block;color:#fff}
-.navbar-nav .sub-menu{display:none;position:absolute;min-width: 240px;background: #fc832a;left:0px;padding-left:0;padding-right:0;transition:all 0.4s;z-index:1000;text-align:left;}
+.navbar-nav .sub-menu{display:none;position:absolute;min-width: 240px;background: #337ab7;left:0px;padding-left:0;padding-right:0;transition:all 0.4s;z-index:1000;text-align:left;}
 .navbar-nav .sub-menu li{display: block;line-height: 40px;height: 40px;}
 .navbar-nav .sub-menu li a{color:#fff;padding: 0 15px;text-decoration: none}
 .navbar-nav .sub-menu li:hover {
@@ -98,7 +98,7 @@ div.news-more div.news-more-title{text-transform: uppercase;font-size: 14px;colo
     margin: 0 15px 0 0;
 }
 .wpp-post-title {
-    color: #fc832a;
+    color: #337ab7;
     font-weight: bold;
 }
 /*css slider*/
@@ -128,7 +128,7 @@ div.news-more div.news-more-title{text-transform: uppercase;font-size: 14px;colo
     padding: 8px 60px;
    background: #ffffffb8;
     border-bottom: 1px solid #46c003;
-    color: #fc832a;
+    color: #337ab7;
     text-transform: uppercase;
     font-size: 13px;
     font-family: 'Roboto condensed', arial;
@@ -142,13 +142,13 @@ div.news-more div.news-more-title{text-transform: uppercase;font-size: 14px;colo
     padding: 60px 0px 0px 0px;
 }
 .thanhtuu {
-    background: radial-gradient( #f9d42333, #fc832a33);
+    background: radial-gradient( #f9d42333, #337ab733);
 }
 .thanhtuu-list {
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
-    color: #fc832a;
+    color: #337ab7;
     font-weight: bold;
     padding: 20px 0;
 }
@@ -161,12 +161,12 @@ div.news-more div.news-more-title{text-transform: uppercase;font-size: 14px;colo
 .read-more
 {   margin: 20px 0;
     color: #Fff;
-    background:linear-gradient(135deg,#46c003 30%,#fc832a 100%);
+    background:linear-gradient(135deg,#46c003 30%,#337ab7 100%);
     border: #3bdddd;
 
 }
 .read-more:hover{
-    background: #fc832a;
+    background: #337ab7;
     color: #fff;
 }
 .line-style {
@@ -208,7 +208,7 @@ h3.entry-title
 {
     padding: 0px 30px;
     font-size: 21px;
-    color:#fc832a;
+    color:#337ab7;
     text-transform: uppercase;
     line-height: 1.4;
 }
@@ -228,7 +228,7 @@ h3.entry-title
         left: 435px;
         width: 244px;
         height: 4px;
-        background-color: #fc832a
+        background-color: #337ab7
     }
     .introduct{background: #f5f5f5;padding-bottom: 60px;}
     .introduct i{
@@ -249,7 +249,7 @@ section{overflow-x: hidden}
 .block-item{margin-top: 30px;}
 .box-hover{position: relative;}
 .infor{
-background: #fc832ad4;
+background: #337ab7d4;
 visibility: hidden;
 opacity: 0;
 position: absolute;
@@ -283,15 +283,15 @@ h2.title{text-transform: uppercase;
     left: 0;
     width: 200px;
     height: 3px;
-    background-color: #fc832a;
+    background-color: #337ab7;
 }
 .posts-detail h1 {
     font-size: 30px;
 }
 .post .col-md-6{padding: 15px 25px 15px 0px;}
 .post .col-md-6:last-child{padding: 15px 0 0 0}
-h1, h2, h3, h4{color: #fc832a}
-h2 span{color: #fc832a !important;}
+h1, h2, h3, h4{color: #337ab7}
+h2 span{color: #337ab7 !important;}
 h3.h3--title {
     font-weight: bold;
     font-size: 17px;
@@ -305,7 +305,7 @@ h3.title{
         overflow: hidden; 
     }
 h3.title a{
-color: #fc832a;
+color: #337ab7;
     font-family: arial;
     font-size: 17px;
     line-height: 20px;
@@ -333,7 +333,7 @@ h3.news-more-title.text-center:before {
     left: 0;
     width: 100px;
     height: 3px;
-    background-color: #fc832a;
+    background-color: #337ab7;
 }
 .post-item{padding: 0 0 31px 0;}
 .home_summary{color: #282828;
@@ -342,9 +342,9 @@ font-size: 14px;
 margin: 0;
 text-align: justify;padding:10px 0 5px 0;}
 .video-greeting img {
-    border: 1px solid #fc832a4f;
+    border: 1px solid #337ab74f;
     padding: 2px;
-    box-shadow: 1px 1px 4px #fc832a4d;
+    box-shadow: 1px 1px 4px #337ab74d;
     transition: all 1s cubic-bezier(0, 0, 0.2, 1);
 }
 .video-greeting .box-hover:hover img {
@@ -369,7 +369,7 @@ white-space: nowrap;}
     animation-name: fadeInDown;
 }
 blockquote {
-    border-left: 5px solid #fc832a14;
+    border-left: 5px solid #337ab714;
 }
 .video-greeting {
     padding: 50px 0;
@@ -398,7 +398,7 @@ blockquote {
 .owl-kh .item{padding: 36px;}
 .owl-kh .item h4.title{
     height: auto;
-    color: #fc832a;
+    color: #337ab7;
     font-family: arial;
     font-size: 17px;
     line-height: 20px;
@@ -407,7 +407,7 @@ blockquote {
     /*css footer*/
     h2.f{color:white;}
     footer{
-        background: #fc832ae0;
+        background: #337ab7e0;
         padding-top: 15px;
         color: white;
     }
@@ -476,9 +476,9 @@ blockquote {
                                 font-size: 18px;}
                                 /*css sidebar*/
                                 aside{margin-bottom: 20px}
-                                h4.entry-title{color: #fc832a;position: relative;padding-bottom: 13px;border-bottom: 1px solid #f5f5f5;margin-bottom: 15px;letter-spacing: 1px;text-transform: uppercase;line-height: 1.5;font: 20px helvetica; font-weight: bold;}
+                                h4.entry-title{color: #337ab7;position: relative;padding-bottom: 13px;border-bottom: 1px solid #f5f5f5;margin-bottom: 15px;letter-spacing: 1px;text-transform: uppercase;line-height: 1.5;font: 20px helvetica; font-weight: bold;}
                                 a{color: black}
-                                h4.entry-title:before{position: absolute;content: '';bottom: -1px;left: 0;width: 36px;height: 3px;background-color: #fc832a;}
+                                h4.entry-title:before{position: absolute;content: '';bottom: -1px;left: 0;width: 36px;height: 3px;background-color: #337ab7;}
                                 .ul-contact{list-style: none;padding: 0;width: 70%;margin: 0 auto;}
                                 ul.ul-contact li{background: #3cb878;border-radius: 3px;height: 35px;margin-bottom: 10px;    margin-left: -20px;}
                                 ul.ul-contact li a{text-decoration: none;color: white}
@@ -505,8 +505,8 @@ blockquote {
             right: 4px;z-index: 10}
             .toggle{padding: 0px;}
             .navbar-inverse .navbar-toggle {
-                border-color: #fc832a;
-                background: #fc832a;
+                border-color: #337ab7;
+                background: #337ab7;
             }
             .navbar-toggle{margin-right: 0px;}
             .navbar-inverse .navbar-toggle .icon-bar{background-color: white;}
@@ -521,7 +521,7 @@ blockquote {
                 z-index: 11;}
               
                 #mymenu{
-                    background:#fc832a;
+                    background:#337ab7;
                     position: fixed;
                     top: 32px;
                     right: 0px;
