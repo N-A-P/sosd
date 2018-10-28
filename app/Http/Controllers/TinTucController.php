@@ -14,7 +14,7 @@ class TinTucController extends Controller
      */
     public function index()
     {
-        return 2389;
+        
     }
 
     /**

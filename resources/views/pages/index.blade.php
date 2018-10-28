@@ -113,20 +113,16 @@
 				<div class="form-lich">
 					<div role="form" class="wpcf7" id="wpcf7-f429-o1" lang="vi" dir="ltr">
 <div class="screen-reader-response"></div>
-<form action="/#wpcf7-f429-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<form action="AdminController@lienhe" method="post" class="wpcf7-form" novalidate="novalidate">
 <div style="display: none;">
-<input type="hidden" name="_wpcf7" value="429" />
-<input type="hidden" name="_wpcf7_version" value="5.0.4" />
-<input type="hidden" name="_wpcf7_locale" value="vi" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f429-o1" />
-<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="token" value="429" />
 </div>
 <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Họ và tên" /></span><br />
 <span class="wpcf7-form-control-wrap phone"><input type="text" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Số điện thoại" /></span><br />
 <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email" /></span><br />
 <span class="wpcf7-form-control-wrap date-82"><input type="date" name="date-82" value="Đặt ngày giờ" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" /></span><br />
 <span class="wpcf7-form-control-wrap address"><textarea name="address" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Nhập địa chỉ và yêu cầu của bạn"></textarea></span></p>
-<p><input type="submit" value="GỬI ĐĂNG KÍ" class="wpcf7-form-control wpcf7-submit" /></p>
+<p><input type="submit" value="GỬI ĐĂNG KÍ" class="wpcf7-form-control wpcf7-submit" name="submit" /></p>
 <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>						</div>
 			</div>
 		</div>
@@ -141,7 +137,8 @@
 			
 			<div class="col-md-3 col-sm-6 col-xs-6 block-item">
 				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
-					<div class="intro-img"><a  href="{{ asset( 'storage/images/'.$m->anh)}}"><img width="5136" height="3104" src="{{ asset( 'storage/images/'.$m->anh)}}" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" /></a></div>
+					<div class="intro-img">
+						<img width="5136" height="3104" src="{{ asset( 'storage/images/'.$m->anh)}}" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset=" {{ asset( 'storage/images/'.$m->anh)}} 5136w, images/1.jpg 300w, {{ asset( 'storage/images/'.$m->anh)}} 768w, images/1.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></div>
 					<div class="infor">
 						<div class="model">
 						<h3 class="name-model">{{$m->ten}}</h3>
@@ -167,16 +164,17 @@
 		<div class="content clearfix">
 			<div class="header"><h2>Tin tức nổi bật</h2></div>
 			<div class="clearfix"></div>
-								@for ($i =0; $i<9; $i++)
+								@foreach ($news as $i)
+								
 								<div class="col-md-4 col-sm-6 frame_left item">
 									<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-										<a href="#" title="Kinh nghiệm giúp bé học giỏi ngoại ngữ" class="thumb"><img width="515" height="286" src="images/t2.jpg" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
+									<a href="#" title="{{$i->tieude}}" class="thumb"><img width="515" height="286" src="{{asset('storage/images/'.$i->thumbnail)}}" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
 										<div class="effect">
-											<h3 class="title"><a href="#" title="Kinh nghiệm giúp bé học giỏi ngoại ngữ">Kinh nghiệm giúp bé học giỏi ngoại ngữ</a></h3>
+											<h3 class="title"><a href="#" title="{{$i->tieude}}">{{$i->tieude}}</a></h3>
 										</div>
 									</div>
 								</div>
-								@endfor
+								@endforeach
 			
 												</div>
 										</div>

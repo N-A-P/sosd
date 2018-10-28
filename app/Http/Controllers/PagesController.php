@@ -8,9 +8,10 @@ use DB;
 
 class PagesController extends Controller
 {
-   public function index(){      
+   public function index(){
+        $news = tintuc::orderBy('id','desc')->take(3)->get();  
         $maids = nhanvien::all()->random(12);
-        return view('pages.index')->with('maids',$maids);
+        return view('pages.index')->with('maids',$maids)->with('news',$news);
    }
    public function about(){
        $news  = tintuc::orderBy('id','desc')->take(5)->get();
