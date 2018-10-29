@@ -16,7 +16,7 @@ Route::get('/a', function () {
 });
 Route::get('/','PagesController@index');
 Route::get('/about','PagesController@about')->name('pages.about');
-Route::get('/lien-he','PagesController@lienhe')->name('pages.lienhe');
+Route::get('/lienhe','PagesController@lienhe')->name('pages.lienhe');
 Route::get('/dichvu','PagesController@dichvu')->name('pages.dichvu');
 Route::get('/dichvu/giadinh','PagesController@giupviec')->name('pages.giupviec');
 Route::get('debug',function(){
@@ -39,4 +39,9 @@ Route::resource('/quanlytintuc','TinTucController');
 Route::get('/addnews',function(){
     return view('admin.themTintuc');
 });
-Route::get('/admin', 'DashboardController@index');
+Route::get('/a', 'DashboardController@index');
+
+Route::resource('/as','ContactController');
+    //Route::get('/lienhe',function(){
+    //  return view('pages.lienhe');
+    //});
