@@ -164,13 +164,12 @@
 		<div class="content clearfix">
 			<div class="header"><h2>Tin tức nổi bật</h2></div>
 			<div class="clearfix"></div>
-								@foreach ($news as $i)
-								
+								@foreach($news as $i)								
 								<div class="col-md-4 col-sm-6 frame_left item">
 									<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
 									<a href="#" title="{{$i->tieude}}" class="thumb"><img width="515" height="286" src="{{asset('storage/images/'.$i->thumbnail)}}" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
 										<div class="effect">
-											<h3 class="title"><a href="#" title="{{$i->tieude}}">{{$i->tieude}}</a></h3>
+										<h3 class="title"><a href="/tintuc/{{$i->id}}" title="{{$i->tieude}}">{{$i->tieude}}</a></h3>
 										</div>
 									</div>
 								</div>

@@ -33,6 +33,7 @@ class PagesController extends Controller
    }
    public function tintuc_chitiet($id){
         $data = tintuc::find($id);
+        $data->increment('luotxem');
         $news  = tintuc::orderBy('id','desc')->take(5)->get();      
        return view('pages.tintuc-chitiet')->with('data',$data)->with('news',$news);
    }

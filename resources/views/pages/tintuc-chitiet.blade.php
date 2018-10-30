@@ -1,25 +1,18 @@
 @extends('layouts.header')
 @section('content')
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $('.tab-menu').click(function () {
-                $('#mymenu').toggle(50);
-            });
-            $(window).scroll(function () {
-                var scrollTop = $(window).scrollTop();
-                if (scrollTop > 100) {
-                    $('.menu-nav').addClass('is-show');
-                } else {
-                    $('.menu-nav').removeClass('is-show');
-                }
-            });
-
-        });
-    </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
     <nav class="breadcrumbs">
         <div class="container">
             <div class="breadcrumbs-text">
-                <span><span><a href="/">Tin tuc</a> » <span class="breadcrumb_last">Nhân viên</span></span></span>
+                <span><span><a href="/">Trang Chủ</a> » <span class="breadcrumb_last">Tin tức</span></span></span>
             </div>
         </div>
     </nav>
@@ -33,6 +26,7 @@
                    <h2> {{ $data->tieude }}</h2>
                     {!! $data->noidung !!}
                 </div>
+            <div class="fb-comments" data-href="https://localhost:80/tintuc/{{$data->id}}" data-width="800" data-numposts="5"></div>
             </div>
             @include('layouts.lay2')
         </div>

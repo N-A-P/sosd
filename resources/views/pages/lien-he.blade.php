@@ -1,21 +1,6 @@
 @extends('layouts.header')
 @section('content')
-       <script type="text/javascript">   
-        jQuery(document).ready(function ($) {
-            $('.tab-menu').click(function(){
-              $('#mymenu').toggle(50);
-            });
-            $(window).scroll(function () {
-                var scrollTop = $(window).scrollTop();
-                if (scrollTop > 100) {
-                    $('.menu-nav').addClass('is-show');
-                } else {
-                    $('.menu-nav').removeClass('is-show');      
-                }
-            });
-
-        });
-      </script><nav class="breadcrumbs">
+    <nav class="breadcrumbs">
   <div class="container">
     <div class="breadcrumbs-text">
       <span><span><a href="index.html" >Trang chủ</a> » <span class="breadcrumb_last">Liên hệ</span></span></span>    </div>

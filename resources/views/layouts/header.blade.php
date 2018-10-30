@@ -186,6 +186,22 @@
   new WOW().init();
 </script> 
 <a class="back-to-top"><i class="fa fa-angle-up"></i></a>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('.tab-menu').click(function () {
+            $('#mymenu').toggle(50);
+        });
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 100) {
+                $('.menu-nav').addClass('is-show');
+            } else {
+                $('.menu-nav').removeClass('is-show');
+            }
+        });
+
+    });
+</script>
 </body>
 
 </html>
