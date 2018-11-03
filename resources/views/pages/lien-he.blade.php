@@ -43,7 +43,7 @@
 <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Họ và tên" /></span><br />
 <span class="wpcf7-form-control-wrap phone"><input type="text" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Số điện thoại" /></span><br />
 <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email" /></span><br />
-<span class="wpcf7-form-control-wrap date-82"><input type="date" name="date" value="Đặt ngày giờ" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" /></span><br />
+<span class="wpcf7-form-control-wrapph"><input type="date" name="date" value="Đặt ngày giờ" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" /></span><br />
 <span class="wpcf7-form-control-wrap address"><textarea name="noidung" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Nhập địa chỉ và yêu cầu của bạn"></textarea></span></p>
 <p><input type="submit" value="GỬI ĐĂNG KÍ" class="wpcf7-form-control wpcf7-submit" /></p>
 <div class="wpcf7-response-output wpcf7-display-none"></div></form>
