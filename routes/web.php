@@ -13,7 +13,7 @@
 
 Route::get('/','PagesController@index');
 Route::get('/about','PagesController@about')->name('pages.about');
-Route::get('/lien-he','PagesController@lienhe')->name('pages.lienhe');
+Route::get('/lienhe','PagesController@lienhe')->name('pages.lienhe');
 Route::get('/dichvu','PagesController@dichvu')->name('pages.dichvu');
 Route::get('/dichvu/giadinh','PagesController@giupviec')->name('pages.giupviec');
 Route::get('debug',function(){
