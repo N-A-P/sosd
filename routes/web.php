@@ -32,7 +32,7 @@ Auth::routes();
 Route::resource('/quanlytintuc','TinTucController');
 Route::get('/admin', 'DashboardController@index');
 
-Route::group(['prefix' => 'admin'], function(){
+Route::group(['prefix' => 'admin1'], function(){
     Route::get('/addnews', 'TinTucController@index');
     Route::get('/addmaids','EmployeeController@index');
 });
