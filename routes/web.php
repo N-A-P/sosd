@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/a', function () {
-    return view('welcome');
-});
 Route::get('/','PagesController@index');
 Route::get('/about','PagesController@about')->name('pages.about');
 Route::get('/lienhe','PagesController@lienhe')->name('pages.lienhe');
@@ -30,18 +27,11 @@ Route::get('/nhanvien','PagesController@nhanvien')->name('pages.nhanvien');
 
 /*admin*/
 Route::resource('/quanlynguoigiupviec','EmployeeController');
-Route::get('/asd',function(){
-    return view('admin.qly-themnguoigv');
-});
-
 Auth::routes();
 Route::resource('/quanlytintuc','TinTucController');
-Route::get('/addnews',function(){
-    return view('admin.themTintuc');
-});
-Route::get('/a', 'DashboardController@index');
+Route::get('/admin', 'DashboardController@index');
 
-Route::resource('/as','ContactController');
-    //Route::get('/lienhe',function(){
-    //  return view('pages.lienhe');
-    //});
+Route::group(['prefix' => 'admin'], function(){
+    Route::get('/addnews', 'TinTucController@index');
+    Route::get('/addmaids','EmployeeController@index');
+});
