@@ -27,15 +27,12 @@ Route::resource('/quanlytintuc','TinTucController');
 
 
 /*admin*/
+Route::resource('/quanlynguoigiupviec','EmployeeController');
+Auth::routes();
+Route::resource('/quanlytintuc','TinTucController');
+Route::get('/admin', 'DashboardController@index');
 
- Route::resource('/quanlynguoigiupviec','EmployeeController');
- Route::get('/asd',function(){
-     return view('admin.qly-themnguoigv');
- });
-
- Auth::routes();
- Route::resource('/quanlytintuc','TinTucController');
-Route::get('/addnews',function(){
-     return view('admin.themTintuc');
- });
- Route::get('/admin', 'DashboardController@index');
+Route::group(['prefix' => 'admin'], function(){
+    Route::get('/addnews', 'TinTucController@index');
+    Route::get('/addmaids','EmployeeController@index');
+});

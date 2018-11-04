@@ -14,7 +14,7 @@ class TinTucController extends Controller
      */
     public function index()
     {
-        
+        return view('admin.themTintuc');   
     }
 
     /**
@@ -47,7 +47,7 @@ class TinTucController extends Controller
         $model->noidung = $request->input('noidung');
         $model->save();
     
-       return redirect('/addnews');
+       return redirect('/admin/addnews');
     }
 
     /**
