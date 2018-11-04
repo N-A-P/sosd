@@ -47,7 +47,7 @@ class TinTucController extends Controller
         $model->noidung = $request->input('noidung');
         $model->save();
     
-       return redirect('/admin/addnews');
+       return redirect('/adm/addnews')->with('success','Đã đăng bài viết');
     }
 
     /**

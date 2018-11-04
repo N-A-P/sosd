@@ -30,9 +30,10 @@ Route::resource('/quanlytintuc','TinTucController');
 Route::resource('/quanlynguoigiupviec','EmployeeController');
 Auth::routes();
 Route::resource('/quanlytintuc','TinTucController');
-Route::get('/admin', 'DashboardController@index');
+Route::get('/adm', 'DashboardController@index');
 
-Route::group(['prefix' => 'admin1'], function(){
+Route::group(['prefix' => 'adm'], function(){
+    Route::get('/dashboard', 'DashboardController@index');
     Route::get('/addnews', 'TinTucController@index');
     Route::get('/addmaids','EmployeeController@index');
 });

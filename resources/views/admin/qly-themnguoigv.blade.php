@@ -1,5 +1,6 @@
     @extends('layouts.adheader')
     @section('content')
+    @include('layouts.message')
     <div class="row">
         {!! Form::open(['action' => 'EmployeeController@store','method'=> 'POST','enctype'=>'multipart/form-data']) !!}
         {{ csrf_field() }}

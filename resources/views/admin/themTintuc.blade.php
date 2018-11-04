@@ -14,6 +14,7 @@
 <body> --}}
 @extends('layouts.adheader')
 @section('content')
+@include('layouts.message')
     <div class="content-wrapper">
         <div class="container col col-md-5">
             {!! Form::open(['action' => 'TinTucController@store','method'=> 'POST','enctype'=>'multipart/form-data']) !!}

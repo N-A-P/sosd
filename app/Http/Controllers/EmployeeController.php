@@ -52,7 +52,7 @@ class EmployeeController extends Controller
         $nv->kinhnghiem_tomtat = $request->input('kinhnghiem_tomtat');
         $nv->save();
     
-       return redirect('/asd');
+       return redirect('/adm/addmaids')->with('success','Thêm nhân viên thành công');
     }
 
     /**
