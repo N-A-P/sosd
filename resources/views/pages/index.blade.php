@@ -18,68 +18,6 @@
 	</div>
 </div>
 </div>
-<div class="video-greeting">
-	<div class="container">
-		<div class="header">
-			<h2>Dịch vụ nổi bật</h2>
-		</div>
-		<div class="row">
-				
-									<div class="col-md-3 col-sm-6">
-				<div class="box-hover wow" data-wow-delay="0s" data-wow-duration="1.5s">
-					<a href="Dv_gia-dinh.html">
-						<img src="images/viec1.png">
-					</a>
-				
-				</div>
-				<h3 class="h3--title wow" data-wow-delay="0.5s" data-wow-duration="1.5s">Giúp việc gia đình cung ứng dịch vụ uy tín tại Hà Nội</h3>
-				<p class="home_summary wow" data-wow-delay="1s" data-wow-duration="1.5s">Giúp việc gia đình tại HTP uy tín, chuyên nghiệp, người lao động được đào tạo bài bản, lý lịch rõ ràng, Cam kết dịch vụ tốt nhất tại Hà Nội.</p>
-				<div class="text-center wow" data-wow-delay="1.5s" data-wow-duration="1.5s">
-					<a href="Dv_gia-dinh.html" class="btn btn-default read-more">Xem chi tiết</a>
-				</div>
-				</div>
-										<div class="col-md-3 col-sm-6">
-				<div class="box-hover wow" data-wow-delay="0s" data-wow-duration="1.5s">
-					<a href="Dv_trongtre.html">
-						<img src="images/viec2.png">
-					</a>
-				
-				</div>
-				<h3 class="h3--title wow" data-wow-delay="0.5s" data-wow-duration="1.5s">Công ty dịch vụ giúp việc trông trẻ Hà Nội uy tín đảm bảo</h3>
-				<p class="home_summary wow" data-wow-delay="1s" data-wow-duration="1.5s">Tìm người giúp việc trông trẻ ngày càng trở nên cần thiết cho các bậc làm cha mẹ không có nhiều thời gian quan tâm, chăm sóc cho con trẻ.</p>
-				<div class="text-center wow" data-wow-delay="1.5s" data-wow-duration="1.5s">
-					<a href="Dv_trongtre.html" class="btn btn-default read-more">Xem chi tiết</a>
-				</div>
-				</div>
-										<div class="col-md-3 col-sm-6">
-				<div class="box-hover wow" data-wow-delay="0s" data-wow-duration="1.5s">
-					<a href="Dv_nguoi-gia.html">
-						<img src="images/viec3.png">
-					</a>
-				
-				</div>
-				<h3 class="h3--title wow" data-wow-delay="0.5s" data-wow-duration="1.5s">Dịch vụ giúp việc chăm sóc người già tại Hà Nội uy tín</h3>
-				<p class="home_summary wow" data-wow-delay="1s" data-wow-duration="1.5s">Công việc đòi hỏi người chăm sóc vừa phải có lòng kính trọng đối với người già, vừa phải có thời gian, am hiểu tâm lý người già mới có thể làm tốt việc.</p>
-				<div class="text-center wow" data-wow-delay="1.5s" data-wow-duration="1.5s">
-					<a href="Dv_nguoi-gia.html" class="btn btn-default read-more">Xem chi tiết</a>
-				</div>
-				</div>
-										<div class="col-md-3 col-sm-6">
-				<div class="box-hover wow" data-wow-delay="0s" data-wow-duration="1.5s">
-					<a href="Dv_giupviectheogio.html">
-						<img src="images/viec4.png">
-					</a>
-				
-				</div>
-				<h3 class="h3--title wow" data-wow-delay="0.5s" data-wow-duration="1.5s">Giúp việc theo giờ, hành chính chuyên nghiệp tại Hà Nội</h3>
-				<p class="home_summary wow" data-wow-delay="1s" data-wow-duration="1.5s"> Bạn muốn có người giúp việc để san sẻ công việc nhà nhưng lại không muốn thuê giúp việc ăn ở lại vì bị ảnh hưởng đến không gian riêng tư của bản thân.</p>
-				<div class="text-center wow" data-wow-delay="1.5s" data-wow-duration="1.5s">
-					<a href="Dv_giupviectheogio.html" class="btn btn-default read-more">Xem chi tiết</a>
-				</div>
-				</div>
-								</div>
-	</div>
-</div>
 <div class="thanhtuu">
 	<div class="container">
 		<div class="row">
@@ -153,7 +91,7 @@
 		</div>
 		
 			<!-- Print a link to this category -->
-			<a href="/" title="Category Name" class="btn read-more">Xem thêm</a>
+			<a href="/nhanvien" title="Category Name" class="btn read-more">Xem thêm</a>
 
 	</div>
 </div>
