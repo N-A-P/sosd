@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>AdminLTE 2 | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -129,28 +130,18 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Danh sách</a></li>
             <li class="treeview">
-              <a href="#"><i class="fa fa-circle-o"></i> Thêm mới
+              <a href="#"><i class="fa fa-circle-o"></i> Danh sách
                 <span class="pull-right-container">
                   <i class="fa fa-angle-right pull-right"></i>
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                <li class="treeview">
-                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{route('list_nv')}}"><i class="fa fa-circle-o"></i>Người giúp việc</a></li>
+                <li><a href="{{route('list_nganh')}}"><i class="fa fa-circle-o"></i> Ngành nghề</a></li>
               </ul>
             </li>
+
             <li><a href="/adm/addmaids"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
           </ul>
         </li>
@@ -211,7 +202,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="{{ asset('admin/js/jquery.min.js') }}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="{{ asset('admin/js/bootstrap.min.js') }}"></script>
 <!-- FastClick -->
@@ -228,7 +219,7 @@
 <!-- ChartJS -->
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{ asset('admin/js/dashboard2.js') }}"></script>
+
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('admin/js/demo.js') }}"></script>
 </body>

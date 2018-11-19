@@ -36,4 +36,7 @@ Route::group(['prefix' => 'adm'], function(){
     Route::get('/dashboard', 'DashboardController@index');
     Route::get('/addnews', 'TinTucController@index');
     Route::get('/addmaids','EmployeeController@index');
+    Route::post('/maidslist','EmployeeController@list_nv_ajax')->name('list_nv');
+    Route::get('/maidslist','EmployeeController@list_nv');
+    Route::get('/addfield','EmployeeController@list_nganh')->name('list_nganh');
 });

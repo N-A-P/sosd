@@ -5,6 +5,9 @@ use App\tintuc;
 use App\nhanvien;
 use Illuminate\Http\Request;
 use DB;
+use  Illuminate\Support\Facades\Hash;
+
+
 
 class PagesController extends Controller
 {
@@ -14,6 +17,8 @@ class PagesController extends Controller
         return view('pages.index')->with('maids',$maids)->with('news',$news);
    }
    public function about(){
+    
+        return (string)hash::check('1234565','$2y$10$KZAC/buIQ36TkwiUFWiO6O8tQ2ybzGKEuM50tIAHEdZYgWTBSQ/0m');
        $news  = tintuc::orderBy('id','desc')->take(5)->get();
        return view('pages.about')->with('news',$news);
    }

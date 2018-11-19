@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\nhanvien;
 use DB;
+use Response;
+
 
 class EmployeeController extends Controller
 {
@@ -54,7 +56,27 @@ class EmployeeController extends Controller
     
        return redirect('/adm/addmaids')->with('success','Thêm nhân viên thành công');
     }
-
+      /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function list_nv(){
+        return view('admin.maidList');
+    }
+    public function list_nv_ajax(Request $request){
+        $list = nhanvien::all('id','ten','nganhnghe','kinhnghiem_tomtat');
+        if($request->get('data') =='asd123')
+        echo $list;
+        else
+        return Response::json(json_decode($list),200);
+       // return view('admin.maidList',['list_nv'=>$data]);
+    }
+    public function list_nganh(){
+        $list = DB::table('nganh')->select('nganh_nghe')->get();
+        $data = json_decode($list);
+        return view('admin.maidList',['list_nganh'=> $data]);
+    }
     /**
      * Display the specified resource.
      *
