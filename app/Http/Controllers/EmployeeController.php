@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\nhanvien;
 use DB;
@@ -40,11 +39,23 @@ class EmployeeController extends Controller
     {
         $nv = new nhanvien;
         $nv->fill($request->all());
-        if($request->hasFile('anh'))
+        if($request->hasFile('anh')){
+            if($request->file('anh')->isValid()){
+                $extd = strtoupper($request->file('anh')->getClientOriginalExtension());
+
+                if($extd == 'JPG' || $extd == 'PNG' || $extd == 'JPEG' || $extd == 'GIF' )
+                {
+                    $request->file('anh')->store('public/images');
+                    $file_name = $request->file('anh')->hashName();
+                    $nv->anh =$file_name;
+                }
+                else
+                    return back()->with('error','Chỉ chấp nhận các file ảnh có định dạng jpg, png và gif');
+            }
+        }
+        else
         {
-            $request->file('anh')->store('public/images');
-            $file_name = $request->file('anh')->hashName();
-            $nv->anh =$file_name;
+            $nv->anh = 'default.png';
         }
         $nv->ten = $request->input('ten');
         $nv->namsinh = $request->input('namsinh');
@@ -83,7 +94,8 @@ class EmployeeController extends Controller
      */
     public function show($id)
     {
-        //
+        $info = nhanvien::find($id);
+        return view('admin.nhanvien.edit')->with('info',$info);
     }
 
     /**
@@ -94,7 +106,7 @@ class EmployeeController extends Controller
      */
     public function edit($id)
     {
-        //
+       
     }
 
     /**
@@ -104,9 +116,35 @@ class EmployeeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+    
+        if($model = nhanvien::find($request->id)){
+            $model->ten = $request->ten;
+            $model->namsinh = $request->namsinh;
+            $model->quequan = $request->quequan;
+            $model->nganhnghe = $request->nganhnghe;
+            $model->kinhnghiem = $request->kinhnghiem;
+            $model->kinhnghiem_tomtat = $request->kinhnghiem_tomtat;
+            $model->trang_thai = $request->trangthai;
+            if($request->hasFile('anh'))
+            {
+                if($request->file('anh')->isValid()){
+                    $extd = strtoupper($request->file('anh')->getClientOriginalExtension());
+                    if($extd == 'JPG' || $extd == 'PNG' || $extd == 'JPEG' || $extd == 'GIF' )
+                   {
+                        $request->file('anh')->store('public/images');
+                        $file_name = $request->file('anh')->hashName();
+                        $model->anh =$file_name;
+                    }
+                    else
+                        return back()->with('error','Chỉ chấp nhận các file ảnh có định dạng jpg, png và gif');
+                }
+                
+            }
+            $model->save();
+        }
+        return redirect('/nhanvien/'.$request->id);
     }
 
     /**
@@ -117,7 +155,12 @@ class EmployeeController extends Controller
      */
     public function destroy($id)
     {
-        nhanvien::where('id',$id)->delete();
-        return redirect('/adm/maidslist')->with('success','Da xoa thanh cong nhan vien ' .  $id);
+        if(nhanvien::destroy($id)){
+            echo 'Đã xóa';
+        }
+        else
+        {
+            echo 'err! something wrong';
+        }
     }
 }

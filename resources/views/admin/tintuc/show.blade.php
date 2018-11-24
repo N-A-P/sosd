@@ -14,11 +14,8 @@
                     <tr align="center">
                         <th>ID</th>
                         <th>Tiêu đề</th>
-                        <th>Tóm tắt</th>
                         <th>Thumbnail</th>
-                        <th>Loại Tin</th>
                         <th>Views</th>
-                        <th>Ranking</th>
                         <th>Ngày tạo</th>
                         <th>Action</th>
                     </tr>
@@ -62,12 +59,9 @@
             var a = 'dcm';
            var str  = '<tr class="even gradeD" align="center"><td>'
            + e.id         + '</td><td>'
-           + e.TieuDe     + '</td><td>'
-           + e.TomTat     + '</td><td>'
-           + e.Hinh       + '</td><td>'
-           + e.idLoaiTin  + '</td><td>'
-           + e.SoLuotXem  + '</td><td>'
-           + e.NoiBat     + '</td><td>'
+           + e.tieude     + '</td><td>'
+           + e.thumbnail       + '</td><td>'
+           + e.luotxem  + '</td><td>'
            + e.created_at + '</td><td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td></tr>';
         $('tbody').append(str);
         });

@@ -1,10 +1,15 @@
 @extends('admin.layouts.index')
 @section('content')
-@include('layouts.message')
+
 <div id="page-wrapper">
     <div class="container-fluid">
+            @include('layouts.message')
+            <div class="col-lg-12">
+                    <h3 class="page-header"> Sửa thông tin người giúp việc</h3>
+            </div>
         {!! Form::open(['action' => 'EmployeeController@store','method'=> 'POST','enctype'=>'multipart/form-data']) !!}
         {{ csrf_field() }}
+
         <div class="col col-md-1"></div>
         <div class="col col-md-3">
             <div class="form-group">

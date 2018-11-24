@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\tintuc;
+use Response;
 
 class TinTucController extends Controller
 {
@@ -14,9 +15,12 @@ class TinTucController extends Controller
      */
     public function index()
     {
-           
+           return view('admin.tintuc.show');
     }
-
+    public function ajax_getlist(){
+         $data = tintuc::all('id','noidung','tieude','thumbnail','luotxem','created_at');
+         return Response::json(json_decode($data),200);
+    }
     /**
      * Show the form for creating a new resource.
      *

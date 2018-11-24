@@ -12,10 +12,11 @@
         <div class="col-md-8 single">
             <h2 class="title">Nhân viên</h2>
             <div class="clear-fix">  </div>
-              
+              {{--literally spagety code right here. I'm too embarrassed to read it--}}
                 @for ($i=0;$i<count($data);$i=$i+3)
                     <div class="row">
                     @for($j=0;$j<3;$j++)
+                    @if($i+$j < count($data))
                     <div class="col-md-4 col-sm-6 col-xs-6"> 
                         <a href="{{ '/nhanvien/'.$data[($i+$j)]->id }}">
                         <img style="width:234px;height:118px" src="{{asset( 'storage/images/'.$data[($i+$j)]->anh) }}" 
@@ -28,6 +29,7 @@
                         </div>
                 
                     </div>
+                    @endif
                     @endfor
                     </div>
                 @endfor
