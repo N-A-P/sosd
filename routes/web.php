@@ -32,11 +32,103 @@ Auth::routes();
 Route::resource('/quanlytintuc','TinTucController');
 Route::get('/adm', 'DashboardController@index');
 
-Route::group(['prefix' => 'adm'], function(){
+Route::group(['prefix' => 'adm'/*,'middleware'=>'auth'*/], function(){
     Route::get('/dashboard', 'DashboardController@index');
-    Route::get('/addnews', 'TinTucController@index');
+    Route::get('/addnews', 'TinTucController@create');
+    Route::post('/addnews','TinTucController@store')->name('tintuc.add');
     Route::get('/addmaids','EmployeeController@index');
-    Route::post('/maidslist','EmployeeController@list_nv_ajax')->name('list_nv');
+    Route::get('/ajax_maidlist','EmployeeController@list_nv_ajax')->name('nhanvien.ajax');
     Route::get('/maidslist','EmployeeController@list_nv');
     Route::get('/addfield','EmployeeController@list_nganh')->name('list_nganh');
+    Route::post('/deletemaid/{id}','EmployeeController@destroy');
 });
+
+
+// <script>
+//    var p = 0;
+//    jQuery.extend({
+//     getValues: function(url) {
+//         var result = null;
+//         $.ajax({
+//             headers: {
+//             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//              },
+//             url: url,
+//             type: 'post',
+//             async: false,
+//             success: function(data) {
+//                 result = data;
+//             }
+//         });
+//        return result;
+//     }
+//     });
+//     var results = $.getValues("{{route('list_nv')}}");
+//     $("#total_records").text(results.length);
+//     function display(results,j){
+                  
+//         }
+//         display(results,p);
+        
+//    $('select').change(function (){
+//         status = $('#nv-status').val();
+//         if(status == 'default')
+//           display(results,p);
+//         else if(status == 'busy')
+//           {            
+//             var temp = new Array();
+//             results.forEach(e => {
+//                /* trang_thai = 0 : available, 
+//                  trang_thai = 1 : co viec lam roi */
+//               if(e.trang_thai == 1)
+//               temp.push(e);
+//             });                              
+//             display(temp,p);
+//           }
+//         else
+//         {            
+//             var temp = new Array();
+//             results.forEach(e => {
+//                /* trang_thai = 0 : available, 
+//                  trang_thai = 1 : co viec lam roi */
+//               if(e.trang_thai == 0)
+//               temp.push(e);
+//             });                              
+//             display(temp,p);
+//           }
+//    });
+//    function nextpage(){
+//     if(p == Math.floor(results.length/$('#numb').val()))
+//     {
+//        $('#next').attr('disabled','true');
+//     }
+//     else
+//      {
+//       $('#prev').removeAttr('disabled');
+//       p++;
+//       display(results,p);
+//      }
+//   }
+//    function previouspage()
+//    {
+//      if(p == 0)
+//      {
+//       $('#prev').attr('disabled','true');
+//      }else
+//      {
+//       $('#next').removeAttr('disabled');
+//        p--;
+//        display(results,p);
+//      }
+//    }
+//    previouspage();
+//     $('.deletem').click(function() {    
+//      if(confirm('Bạn có chắc chắn muốn xóa'))
+//       {
+//       }
+//       else
+//        return;
+      
+//     });
+  
+// </script>

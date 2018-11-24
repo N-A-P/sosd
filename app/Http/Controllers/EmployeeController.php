@@ -17,7 +17,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-       return view('admin.qly-themnguoigv');
+       return view('admin.nhanvien.create');
     }
 
     /**
@@ -49,12 +49,13 @@ class EmployeeController extends Controller
         $nv->ten = $request->input('ten');
         $nv->namsinh = $request->input('namsinh');
         $nv->quequan = $request->input('quequan');
-        $nv->nganhnghe = $request->input('nganhnghe');
+        $nv->nganhnghe ='asd';// $request->input('nganhnghe');
         $nv->kinhnghiem = $request->input('kinhnghiem');
         $nv->kinhnghiem_tomtat = $request->input('kinhnghiem_tomtat');
+        $nv->trang_thai = 0;
         $nv->save();
     
-       return redirect('/adm/addmaids')->with('success','Thêm nhân viên thành công');
+       return back()->with('success','Thêm nhân viên thành công');
     }
       /**
      * Display a listing of the resource.
@@ -62,13 +63,10 @@ class EmployeeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function list_nv(){
-        return view('admin.maidList');
+        return view('admin.nhanvien.show');
     }
     public function list_nv_ajax(Request $request){
-        $list = nhanvien::all('id','ten','nganhnghe','kinhnghiem_tomtat');
-        if($request->get('data') =='asd123')
-        echo $list;
-        else
+        $list = nhanvien::all('id','ten','nganhnghe','quequan','namsinh','trang_thai');
         return Response::json(json_decode($list),200);
        // return view('admin.maidList',['list_nv'=>$data]);
     }
@@ -119,6 +117,7 @@ class EmployeeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        nhanvien::where('id',$id)->delete();
+        return redirect('/adm/maidslist')->with('success','Da xoa thanh cong nhan vien ' .  $id);
     }
 }

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title>Admin | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -20,11 +20,20 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="{{asset('admin/css/_all-skins.min.css') }}">
-
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{asset('js/jquery.datatable.min.js')}}" ></script>
+  <link rel="stylesheet" href="{{asset('css/jquery.datatable.min.css')}}" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"/>
+  <link rel="stylesheet" href="{{asset('css/jquery-ui.theme.css')}}" type="text/css"/>
+  <link rel="stylesheet" href="{{asset('css/jquery-ui.min.css')}}"/>
+  <link rel="stylesheet" type="text/css" href="{{asset('css/style2.css')}}"/>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js') }}"></script>
+  <script src="http://localhost:8000/admin_asset/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js') }}"></script>
   <![endif]-->
 
@@ -42,7 +51,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>Admin</b></span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -60,13 +69,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="{{asset('admin/img.gif')}}" class="user-image" alt="User Image">
+              <img src="{{asset('admin/default.png')}}" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="{{asset('admin/img.gif')}}" class="img-circle" alt="User Image">
+                <img src="{{asset('admin/default.png')}}" class="img-circle" alt="User Image">
                 <p>
                   Alexander Pierce - Web Developer
                   <small>Member since Nov. 2012</small>
@@ -99,10 +108,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="{{asset('admin/img.gif')}}" class="img-circle" alt="User Image">
+          <img src="{{asset('admin/default.png')}}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Admin</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -131,18 +140,18 @@
           </a>
           <ul class="treeview-menu">
             <li class="treeview">
-              <a href="#"><i class="fa fa-circle-o"></i> Danh sách
+              <a href="#"></i> Danh sách
                 <span class="pull-right-container">
                   <i class="fa fa-angle-right pull-right"></i>
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{route('list_nv')}}"><i class="fa fa-circle-o"></i>Người giúp việc</a></li>
-                <li><a href="{{route('list_nganh')}}"><i class="fa fa-circle-o"></i> Ngành nghề</a></li>
+                <li><a href="{{route('list_nv')}}">Người giúp việc</a></li>
+                <li><a href="{{route('list_nganh')}}"></i> Ngành nghề</a></li>
               </ul>
             </li>
 
-            <li><a href="/adm/addmaids"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
+            <li><a href="/adm/addmaids">Thêm mới</a></li>
           </ul>
         </li>
         <li class="treeview">  <a href="#">
@@ -164,19 +173,9 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Version 2.0</small>
-      </h1>
-      <ul class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ul>
-    </section>
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content" id="wrapper">
       @yield('content')
     </section>
     <!-- /.content -->
@@ -202,7 +201,6 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="{{ asset('admin/js/bootstrap.min.js') }}"></script>
 <!-- FastClick -->
