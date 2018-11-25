@@ -99,9 +99,9 @@ var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"https:
       <header>
         <div class="top-bar">
           <div class="container">
-          <div class="left-bar hidden-md"><span class="x-phone"><i class="fa fa-phone" style="margin-right: 2px"></i>0918 725 089</span></div>
+          <div class="left-bar hidden-md"><span class="x-phone"><i class="fa fa-phone" style="margin-right: 2px"></i>0359571956</span></div>
           <div class="left-bar hidden-xs hidden-sm">
-              <span><i class="fa fa-map-marker"></i> Số 100 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội</span>
+              <span><i class="fa fa-map-marker"></i> 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội</span>
           </div>
             <div class="right-bar text-right">
             <span class="social">
@@ -410,12 +410,12 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/giupvieccici.vn\/wp-json\/contact-
           <div class="footer-img">
             <a href="https://giupvieccici.vn/"><img src="./Ten_nv_files/logo-CiCi-2.png"></a>
           </div>
-          <p class="thep"><strong>Công ty TNHH Dịch vụ CICI</strong>&nbsp;là một trong những công ty chuyên cung cấp người lao động chuyên&nbsp;<strong>giúp việc gia đình</strong>, tạp vụ văn phòng, lao động phổ thông hàng đầu hiện nay. Với đội ngũ lãnh đạo và nhân viên trẻ, năng động, chuyên nghiệp, được đào tạo bài bản, không ngừng nâng cao nghiệp vụ, chúng tôi cam kết mang lại cho khách hàng sự hài lòng cao nhất.</p>
+          <p class="thep"><strong>Công ty TNHH Dịch vụ HTP</strong>&nbsp;là một trong những công ty chuyên cung cấp người lao động chuyên&nbsp;<strong>giúp việc gia đình</strong>, tạp vụ văn phòng, lao động phổ thông hàng đầu hiện nay. Với đội ngũ lãnh đạo và nhân viên trẻ, năng động, chuyên nghiệp, được đào tạo bài bản, không ngừng nâng cao nghiệp vụ, chúng tôi cam kết mang lại cho khách hàng sự hài lòng cao nhất.</p>
        </div>
        <div class="col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s" style="visibility: hidden; animation-duration: 1.5s; animation-delay: 0.5s; animation-name: none;">
         <h3 class="title wow fadeInUp" style="visibility: hidden; animation-name: none;">Liên Hệ</h3>
-         <p><i class="fa fa-map-marker"></i> Địa chỉ: Số 10N03 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-          <p><i class="fa fa-phone"></i> Điện thoại: 0918 725 089  - 0967 650 771</p>
+         <p><i class="fa fa-map-marker"></i> Địa chỉ: 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội</p>
+          <p><i class="fa fa-phone"></i> Điện thoại: 0359571956</p>
           <p><i class="fa fa-google-plus"></i> Email: giupvieccici@gmail.com</p>        
        </div>
        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s" style="visibility: hidden; animation-duration: 1.5s; animation-delay: 0.5s; animation-name: none;">
@@ -428,10 +428,10 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/giupvieccici.vn\/wp-json\/contact-
         <div class="container">
    <div class="row">
   <div class="col-md-4"> 
-    <p>© Copyright Công ty TNHH Dịch vụ CICI.</p>
+    <p>© Copyright Công ty TNHH Dịch vụ HTP</p>
   </div>
   <div class="col-md-4 text-center ">
-    <p>Designed by Thiết kế website Ngọc Thắng</p>
+    <p>Designed by nhóm 14 Nguyễn Anh Phương Nguyễn Doãn Hoài Thu Nguyễn Chí Tuấn</p>
   </div>
 </div>
 </div>

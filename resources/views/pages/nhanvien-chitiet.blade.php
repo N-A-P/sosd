@@ -36,16 +36,16 @@
                        
                 <h3>Kinh nghiệm: {{$data[0]->kinhnghiem_tomtat}}</h3>
                    {!!$data[0]->kinhnghiem!!}
-                    <h3>Giúp việc CiCi chuyên cung cấp các dịch vụ</h3>
+                    <h3>Giúp việc HTP chuyên cung cấp các dịch vụ</h3>
                     <ul>
                         <li>Giúp việc ăn ở lại</li>
                         <li>Giúp việc theo giờ, hành chính</li>
                     </ul>
-                    <h3>Liên hệ ngay với #CICI</h3>
+                    <h3>Liên hệ ngay với #HTP</h3>
                     <ul>
-                        <li>Hotline: 0914 911 884 &#8211; 0963 584 111</li>
-                        <li>Địa chỉ: số 10N03 , phố Thọ Tháp, Dịch Vọng, Cầu Giấy</li>
-                    <li>Web: <a href="/"></a>sosd.me</li>
+                        <li>Hotline:0359571956</li>
+                        <li>298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</li>
+                    <li>Web: <a href="/"></a>giupviechtp.com</li>
                     </ul>
                 </div>
                 <div class="news-more">

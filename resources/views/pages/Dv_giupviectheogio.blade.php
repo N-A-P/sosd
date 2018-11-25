@@ -234,8 +234,8 @@ var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"https:
 </ul>
 <h4>Liên hệ ngay với HTP</h4>
 <ul>
-<li>Hotline: 0914 911 884 – 0967 650 771</li>
-<li>Địa chỉ: Số 100, phố Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội.</li>
+<li>Hotline: 0359571956</li>
+<li>Địa chỉ: 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</li>
 </ul>
 <p>Web: <a href="index.html">https://giupviechtp.vn</a></p>
               </div>

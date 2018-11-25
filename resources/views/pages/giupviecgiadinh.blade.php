@@ -18,10 +18,10 @@
                         cũng vì có một bếp lửa hồng.</p>
                     <h2 style="text-align: center;"><span style="color: #0000ff; font-family: arial, helvetica, sans-serif;"><strong>Hotline:
                                 0967.650.771</strong></span></h2>
-                    <div id="attachment_1235" style="width: 669px" class="wp-caption aligncenter"><a href="Dv_gia-dinh.html"><img
+                    <div id="attachment_1235" style="width: 669px" class="wp-caption aligncenter"><a href="Dv_gia-dinh.html"><!--<img
                                 class="wp-image-1235" src="https://giupvieccici.vn/wp-content/uploads/2018/09/500a6ce9d68336dd6f92.jpg"
                                 alt="" width="659" height="439" srcset="https://giupvieccici.vn/wp-content/uploads/2018/09/500a6ce9d68336dd6f92.jpg 600w, https://giupvieccici.vn/wp-content/uploads/2018/09/500a6ce9d68336dd6f92-300x200.jpg 300w"
-                                sizes="(max-width: 659px) 100vw, 659px" /></a>
+                                sizes="(max-width: 659px) 100vw, 659px" />--></a>
                         <p class="wp-caption-text">Bạn quá bận rộn không có thời gian cho công việc gia đình ?</p>
                     </div>
                     <p style="text-align: justify;">Nắm bắt được tâm lý, thấu hiểu được nỗi lo việc nhà <span style="color: #ff6600;">“Giúp
@@ -57,10 +57,10 @@
                         <li>Có giấy khám sức khỏe định kỳ 6 tháng một lần. Đảm bảo chuyên viên giúp việc có sức khỏe
                             tốt, không mắc các loại bệnh nguy hiểm, truyền nhiễm.</li>
                     </ul>
-                    <p style="text-align: justify;"><a href="Dv_gia-dinh.html"><img class="aligncenter wp-image-1237 size-full"
+                    <p style="text-align: justify;"><a href="Dv_gia-dinh.html"><!--<img class="aligncenter wp-image-1237 size-full"
                                 src="https://giupvieccici.vn/wp-content/uploads/2018/09/517d34a28ec86e9637d9-min.jpg"
                                 alt="" width="600" height="400" srcset="https://giupvieccici.vn/wp-content/uploads/2018/09/517d34a28ec86e9637d9-min.jpg 600w, https://giupvieccici.vn/wp-content/uploads/2018/09/517d34a28ec86e9637d9-min-300x200.jpg 300w"
-                                sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+                                sizes="(max-width: 600px) 100vw, 600px" /></a>--></p>
                     <h4 style="text-align: justify;"><span style="color: #ff6600;">Các kỹ năng cơ bản của người giúp
                             việc gia đình</span></h4>
                     <ul style="text-align: justify;">
@@ -100,8 +100,8 @@
                         <li>Dịch vụ VIP</li>
                     </ul>
                     <p style="text-align: justify;">Liên hệ ngay với HTP</p>
-                    <p style="text-align: justify;">Hotline: 0914 911 884 – 0967 650 771</p>
-                    <p style="text-align: justify;">Địa chỉ: số 10N03, phố Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội.</p>
+                    <p style="text-align: justify;">Hotline: 0359571956</p>
+                    <p style="text-align: justify;">Địa chỉ: 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</p>
                     <p style="text-align: justify;">Web: <a href="index.html">https://giupviechtp.vn</a></p>
                 </div>
 

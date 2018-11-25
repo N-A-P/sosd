@@ -106,15 +106,15 @@ var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"https:
       <header>
         <div class="top-bar">
           <div class="container">
-          <div class="left-bar hidden-md"><span class="x-phone"><i class="fa fa-phone" style="margin-right: 2px"></i>0918 725 089</span></div>
+          <div class="left-bar hidden-md"><span class="x-phone"><i class="fa fa-phone" style="margin-right: 2px"></i>0359571956</span></div>
           <div class="left-bar hidden-xs hidden-sm">
-              <span><i class="fa fa-map-marker"></i> Số 100Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội</span>
+              <span><i class="fa fa-map-marker"></i> 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</span>
           </div>
             <div class="right-bar text-right">
             <span class="social">
               <a target="_blank" href="https://www.facebook.com/dichvugiupviecnhauytin"><i class="fa fa-facebook"></i></a>
               <a target="_blank" href="giupviechtp@gmail.com"><i class="fa fa-twitter "></i></a>
-              <a target="_blank" href="0918 725 089"><i class="fa fa-phone"></i></a>
+              <a target="_blank" href="0359571956"><i class="fa fa-phone"></i></a>
               <a target="_blank" href="https://www.youtube.com/watch?v=UZBKShYUJ_s"><i class="fa fa-google-plus"></i></a>
             </span>
           </div>
@@ -306,7 +306,7 @@ var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"https:
     <a href="tel:+"></a>
     <div class="phonering-alo-ph-img-circle">
        
-        <a href="tel:0918 725 089" class="pps-btn-img " title="Liên hệ">
+        <a href="tel:0359571956" class="pps-btn-img " title="Liên hệ">
             <img src="https://i.imgur.com/v8TniL3.png" alt="Liên hệ" width="50" onmouseover="this.src = 'https://i.imgur.com/v8TniL3.png';" onmouseout="this.src = 'https://i.imgur.com/v8TniL3.png';">
         </a>
     </div>
@@ -329,8 +329,8 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/giupvieccici.vn\/wp-json\/contact-
        </div>
        <div class="col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
         <h3 class="title wow fadeInUp">Liên Hệ</h3>
-         <p><i class="fa fa-map-marker"></i> Địa chỉ: Số 100Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-          <p><i class="fa fa-phone"></i> Điện thoại: 0918 725 089  - 0967 650 771</p>
+         <p><i class="fa fa-map-marker"></i> Địa chỉ: 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</p>
+          <p><i class="fa fa-phone"></i> Điện thoại: 0359571956</p>
           <p><i class="fa fa-google-plus"></i> Email: giupviechtp@gmail.com</p>        
        </div>
        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
@@ -343,10 +343,10 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/giupvieccici.vn\/wp-json\/contact-
         <div class="container">
    <div class="row">
   <div class="col-md-4"> 
-    <p>© Copyright Công ty TNHH Dịch vụ HTP.</p>
+    <p>© Copyright Nhóm 14 Nguyễn Anh Phương Nguyễn Doãn Hoài Thu Nguyễn Chí Tuấn</p>
   </div>
   <div class="col-md-4 text-center " >
-    <p>Designed by Thiết kế website Ngọc Thắng</p>
+    <p>Designed by nhóm 14</p>
   </div>
 </div>
 </div>
