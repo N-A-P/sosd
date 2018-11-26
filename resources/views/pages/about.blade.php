@@ -77,8 +77,8 @@
                         trong những công ty dịch vụ giúp việc hàng đầu Việt Nam.</p>
                     <h3 style="text-align: justify;">Trụ sở của công ty</h3>
                     <blockquote>
-                        <p style="text-align: justify;">Địa chỉ:Số 100 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội<br />
-                            Hotline: 0914 911 884 – 0967 650 771</p>
+                        <p style="text-align: justify;">Địa chỉ:298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.<br />
+                            Hotline: 0359571956</p>
                     </blockquote>
                 </div>
 

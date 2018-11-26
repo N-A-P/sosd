@@ -41,7 +41,7 @@
                         <li>Giúp việc ăn ở lại</li>
                         <li>Giúp việc theo giờ, hành chính</li>
                     </ul>
-                    <h3>Liên hệ ngay với #HTP</h3>
+                    <h3>Liên hệ ngay với HTP</h3>
                     <ul>
                         <li>Hotline:0359571956</li>
                         <li>298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</li>

@@ -23,6 +23,7 @@ Route::get('/tintuc','PagesController@tintuc');
 Route::get('/tintuc/{id}','PagesController@tintuc_chitiet')->name('pages.tintuc-chitiet');
 Route::get('/nhanvien/{id}','PagesController@chitietnhanvien')->name('pages.chitietnhanvien');
 Route::get('/nhanvien','PagesController@nhanvien')->name('pages.nhanvien');
+
 Route::resource('/quanlytintuc','TinTucController');
 
 

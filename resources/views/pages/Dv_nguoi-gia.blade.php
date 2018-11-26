@@ -232,9 +232,9 @@ var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"https:
 <li>Dịch vụ VIP</li>
 </ul>
 <p style="text-align: justify;">Liên hệ ngay với HTP</p>
-<p style="text-align: justify;">Hotline: 0914 911 884 – 0967 650 771</p>
-<p style="text-align: justify;">Địa chỉ: số 10N03, phố Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội.</p>
-<p style="text-align: justify;">Web: <a href="index.html">https://giupviechtp.vn</a></p>
+<p style="text-align: justify;">Hotline: 0359571956</p>
+<p style="text-align: justify;">Địa chỉ: 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</p>
+<p style="text-align: justify;">Web: <a href="index.html">https://giupviechtp.com</a></p>
               </div>
               
             

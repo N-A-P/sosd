@@ -19,7 +19,7 @@
     <section class="noidung">
         <div class="container">
             <div class="col-md-9 single">
-                <h2 class="title">Tin tuc</h2>
+                <h2 class="title">Tin tức</h2>
                 <div class="clear-fix">  </div>
 
                 <div class="col col-md-9">

@@ -135,7 +135,7 @@
 													</div>
 																												<div class="item">
 														<img class="wow slideInDown" data-wow-delay="0s"  data-wow-duration="2500ms" src="images/image-0.jpg">
-														<h4 class="taitle wow fadeInUp"  data-wow-delay="0.5s" data-wow-duration="2500ms">Nguyễn Trung Hiếu</h4>
+														<h4 class="title wow fadeInUp"  data-wow-delay="0.5s" data-wow-duration="2500ms">Nguyễn Trung Hiếu</h4>
 														<p class="home_summary wow fadeInUp" data-wow-delay="1s" data-wow-duration="2500ms">Hiện tại nhà mình đang thuê 2 cô ở đây: một cô ở Phú Thọ, 1 cô ở Hưng Yên. Vì nhà mình ngoài làm việc nhà cần người phụ bán quán nên cần thuê 2 người. Nói chung các cô được đào tạo khá tốt, hiền lành, nên cũng thấy yên tâm.</p>
 													</div>
 																											</div>

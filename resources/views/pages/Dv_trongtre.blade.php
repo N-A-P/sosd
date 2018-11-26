@@ -229,9 +229,9 @@ var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"https:
 </ul>
 <p style="text-align: justify;">Liên hệ ngay với HTP</p>
 <ul>
-<li>Hotline: 0914 911 884 – 0967 650 771</li>
-<li>Địa chỉ: số 10N03, phố Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội.</li>
-<li>Web: <a href="index.html">https://giupviechtp.vn</a></li>
+<li>Hotline: 0359571956</li>
+<li>Địa chỉ:298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</li>
+<li>Web: <a href="index.html">https://giupviechtp.com</a></li>
 </ul>
 <p>&nbsp;</p>
               </div>
@@ -342,11 +342,9 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/giupvieccici.vn\/wp-json\/contact-
         <div class="container">
    <div class="row">
   <div class="col-md-4"> 
-    <p>© Copyright Công ty TNHH Dịch vụ HTP.</p>
+    <p>© Copyright Nhóm 14 Nguyễn Anh Phương Nguyễn Doãn Hoài Thu Nguyễn Chí Tuấn</p>
   </div>
-  <div class="col-md-4 text-center " >
-    <p>Designed by Thiết kế website Ngọc Thắng</p>
-  </div>
+  
 </div>
 </div>
 </div>

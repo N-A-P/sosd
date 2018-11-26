@@ -47,9 +47,9 @@
 <header>
     <div class="top-bar">
         <div class="container">
-            <div class="left-bar hidden-md"><span class="x-phone"><i class="fa fa-phone" style="margin-right: 2px"></i>077883754</span></div>
+            <div class="left-bar hidden-md"><span class="x-phone"><i class="fa fa-phone" style="margin-right: 2px"></i>0359571956</span></div>
             <div class="left-bar hidden-xs hidden-sm">
-                <span><i class="fa fa-map-marker"></i> Số 100 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội</span>
+                <span><i class="fa fa-map-marker"></i> 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội.</span>
             </div>
             <div class="right-bar text-right">
                 <span class="social">
@@ -154,8 +154,8 @@
             </div>
             <div class="col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
                 <h3 class="title wow fadeInUp">Liên Hệ</h3>
-                <p><i class="fa fa-map-marker"></i> Địa chỉ: Số 100 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-                <p><i class="fa fa-phone"></i> Điện thoại: 0918 725 089 - 0967 650 771</p>
+                <p><i class="fa fa-map-marker"></i> Địa chỉ: 298, Cầu Diễn, Quận Bắc Từ Liêm, Hà Nội..</p>
+                <p><i class="fa fa-phone"></i> 0359571956</p>
                 <p><i class="fa fa-google-plus-circle"></i> Email: giupviechtp@gmail.com</p>
             </div>
             <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
@@ -174,7 +174,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>© Copyright Công ty TNHH Dịch vụ HTP.</p>
+                    <p>© Copyright nhóm 14 Nguyễn Anh Phương Nguyễn Doãn Hoài Thu Nguyễn Chí Tuấn</p>
                 </div>
             </div>
         </div>
