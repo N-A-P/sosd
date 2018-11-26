@@ -34,7 +34,7 @@
     <link rel='stylesheet' id='fontawesome-min-css'  href='{{ asset('css/font-awesome.min.css') }}' type='text/css' media='all' />
     {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> --}}
 
-
+    
     <script type='text/javascript' src='{{asset('js/jquery-migrate1.4.1.min.js')}}'></script>
     {{-- <script type='text/javascript'>
         /* <![CDATA[ */
@@ -42,7 +42,16 @@
     /* ]]> */
     </script> --}}
     <script type='text/javascript' src='{{asset('js/wpp-4.1.0v412.min.js')}}'></script>
-    <script type='text/javascript' src='{{asset('js/bootstrapv498.min.js')}}'></script>
+    <script type='text/javascript' src='{{asset('js/bootstrap.min.js')}}'></script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </head>
 <header>
     <div class="top-bar">
@@ -160,13 +169,12 @@
             </div>
             <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
                 <h3 class="title">Fanpage</h3>
-                <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/LaravelCommunityDev"
-                    data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                    data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=608950069232934&amp;container_width=0&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fdichvugiupviecnhauytin&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"><span
-                        style="vertical-align: bottom; width: 340px; height: 196px;"><iframe name="f37531ce254238"
-                            width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true"
-                            scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.11/plugins/page.php?adapt_container_width=true&amp;app_id=608950069232934&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FtrnHszv6jVd.js%3Fversion%3D42%23cb%3Df3212703e0fe33c%26domain%3Dgiupvieccici.vn%26origin%3Dhttps%253A%252F%252Fgiupvieccici.vn%252Ff1240116c946614%26relation%3Dparent.parent&amp;container_width=0&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FLaravelCommunityDev&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"
-                            style="border: none; visibility: visible; width: 340px; height: 196px;" class=""></iframe></span></div>
+                <div class="fb-page" data-href="https://www.facebook.com/giupviechtp"
+                data-tabs="timeline" data-height="70" data-small-header="false" 
+                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/giupviechtp" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/giupviechtp">
+                Giúp Việc HTP</a></blockquote></div>
             </div>
         </div>
     </div>
@@ -202,6 +210,27 @@
 
     });
 </script>
+<script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '2085693314823362',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.12'
+          });
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+      
+      <div class="fb-customerchat" page_id="2435131103170924"></div>
+          
 </body>
 
 </html>
