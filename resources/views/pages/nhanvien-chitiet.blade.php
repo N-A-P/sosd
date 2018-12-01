@@ -30,8 +30,8 @@
                 <div class="entry-content">
                     <h2>{{ $data[0]->ten }} – {{ $data[0]->namsinh }}</h2>
                     <h2>Quê: {{ $data[0]->quequan }}</h2>
-                <p><img class="alignnone wp-image-1738 size-large" src="{{ asset( 'storage/images/'.$data[0]->anh)}}"
-                            alt="" width="1024" height="619" srcset="{{asset('storage/images/'.$data[0]->anh)}} 1024w, {{asset('storage/images/'.$data[0]->anh)}} 300w, {{asset('storage/images/'.$data[0]->anh)}} 768w"
+                <p><img class="alignnone wp-image-1738 size-large" src="{{ asset($data[0]->anh)}}"
+                            width="1024" height="619" srcset="{{asset($data[0]->anh)}} 1024w, {{asset($data[0]->anh)}} 300w, {{asset($data[0]->anh)}} 768w"
                             sizes="(max-width: 1024px) 100vw, 1024px" /></p>
                        
                 <h3>Kinh nghiệm: {{$data[0]->kinhnghiem_tomtat}}</h3>
@@ -50,14 +50,14 @@
                 </div>
                 <div class="news-more">
                     <div class="row">
-                        <h3 class="news-more-title text-center">Tin liên quan</h3>
+                        <h3 class="news-more-title text-center">Các nhân viên khác</h3>
                         <div class="tintuc clearfix">
                             
                             @for($i=0;$i < count($more); $i++)
                          
                             
                             <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <a href="/nhanvien/{{$more[$i]->id}}"><img style="width: 244px;height:124px" src="{{ asset("storage/images/".$more[$i]->anh) }}"
+                                    <a href="/nhanvien/{{$more[$i]->id}}"><img style="width: 244px;height:124px" src="{{ asset($more[$i]->anh) }}"
                                                 class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
                                         <h3 class="title"><a href="/nhanvien/{{$more[$i]->id}}">{{$more[$i]->ten}}</a></h3>
                                         <p class="home_summary"> {{$more[$i]->ten}} – {{$more[$i]->namsinh}} Quê: {{{ $more[$i]->quequan }}} Kinh nghiệm: {{$more[$i]->kinhnghiem_tomtat}}</p>

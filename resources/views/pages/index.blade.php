@@ -75,7 +75,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6 block-item">
 				<div class="box-hover wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s">
 					<div class="intro-img">
-						<img width="5136" height="3104" src="{{ asset( 'storage/images/'.$m->anh)}}" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset=" {{ asset( 'storage/images/'.$m->anh)}} 5136w, images/1.jpg 300w, {{ asset( 'storage/images/'.$m->anh)}} 768w, images/1.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></div>
+						<img width="5136" height="3104" src="{{ asset( $m->anh)}}" class="attachment-mai-thumbnails size-mai-thumbnails wp-post-image" alt="" srcset=" {{ asset( $m->anh)}} 5136w, images/1.jpg 300w, {{ asset( $m->anh)}} 768w, images/1.jpg 1024w" sizes="(max-width: 5136px) 100vw, 5136px" /></div>
 					<div class="infor">
 						<div class="model">
 						<h3 class="name-model">{{$m->ten}}</h3>
@@ -104,7 +104,7 @@
 								@foreach($news as $i)								
 								<div class="col-md-4 col-sm-6 frame_left item">
 									<div class="nd-all wow fadeInLeft"  data-wow-delay="0.5s" data-wow-duration="2500ms">
-									<a href="#" title="{{$i->tieude}}" class="thumb"><img width="515" height="286" src="{{asset('storage/images/'.$i->thumbnail)}}" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
+									<a href="#" title="{{$i->tieude}}" class="thumb"><img width="515" height="286" src="{{asset($i->thumbnail)}}" class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
 										<div class="effect">
 										<h3 class="title"><a href="/tintuc/{{$i->id}}" title="{{$i->tieude}}">{{$i->tieude}}</a></h3>
 										</div>
@@ -121,7 +121,6 @@
 								<div class="row box-matbang">
 									<div class="container">
 										<div class="header"><h2>Khách hàng nói gì về chúng tôi</h2></div>
-
 										<div class="large-12 columns">
 											<div class="owl-carousel owl-theme owl-kh text-center">
 																											<div class="item">

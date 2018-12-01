@@ -46,7 +46,7 @@ class EmployeeController extends Controller
                 if($extd == 'JPG' || $extd == 'PNG' || $extd == 'JPEG' || $extd == 'GIF' )
                 {
                     $request->file('anh')->store('public/images');
-                    $file_name = $request->file('anh')->hashName();
+                    $file_name = 'http://giupviechtp.com/storage/images/'.$request->file('anh')->hashName();
                     $nv->anh =$file_name;
                 }
                 else
@@ -55,12 +55,12 @@ class EmployeeController extends Controller
         }
         else
         {
-            $nv->anh = 'default.png';
+            $nv->anh = 'http://giupviechtp.com/storage/images/default.png';
         }
         $nv->ten = $request->input('ten');
         $nv->namsinh = $request->input('namsinh');
         $nv->quequan = $request->input('quequan');
-        $nv->nganhnghe ='asd';// $request->input('nganhnghe');
+        $nv->nganhnghe ='asd';/* $request->input('nganhnghe');*/
         $nv->kinhnghiem = $request->input('kinhnghiem');
         $nv->kinhnghiem_tomtat = $request->input('kinhnghiem_tomtat');
         $nv->trang_thai = 0;

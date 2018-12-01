@@ -39,6 +39,9 @@
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
+            <li>
+                <a href="/crawl"><i class="fas fa-spider"></i> Crawl data</a>
+            </li>
             {{-- <li>
                 <a href="#"><i class="fa fa-users fa-fw"></i> User<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">

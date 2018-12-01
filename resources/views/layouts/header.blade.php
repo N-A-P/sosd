@@ -53,6 +53,7 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 </head>
+<body>
 <header>
     <div class="top-bar">
         <div class="container">

@@ -1,4 +1,5 @@
 @extends('admin.layouts.index')
+@include('layouts.message')
 @section('content')
 <script src="https://cdn.ckeditor.com/ckeditor5/11.1.1/classic/ckeditor.js"></script>
 <div id="page-wrapper">
@@ -10,8 +11,9 @@
             <!-- /.col-lg-12 -->
                 
         <form action="{{route('tintuc.add')}}" method="POST" enctype="multipart/form-data">
-                    <div class="col col-lg-4">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            @csrf       
+            <div class="col col-lg-4">
+                       
                     <div class="form-group">
                         <label>Tiêu đề</label>
                         <input class="form-control" name="tieude" placeholder="Nhập tiêu đề" required />
@@ -22,7 +24,7 @@
                     </div>
                     <div class="form-group">
                         <label>Ảnh</label>
-                        <input type="file" class="form-control-file" name="Hinh" id="Hinh" required />
+                        <input type="file" class="form-control-file" name="thumbnail" id="thumbnail" required />
                     </div>
                     <button type="submit" class="btn btn-primary">Thêm</button>
                     <button type="reset" class="btn btn-default">Reset</button>
@@ -30,7 +32,7 @@
                     <div class="col col-lg-7">
                         <div class="form-group">
                             <label>Nội dung</label>
-                            <textarea id="editor" name="noidung" rows="10" required></textarea>
+                            <textarea  name="noidung" id="editor" rows="10"></textarea>
                         </div>
                     </div>
                 </form>

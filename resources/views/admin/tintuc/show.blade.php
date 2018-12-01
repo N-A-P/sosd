@@ -56,16 +56,42 @@
     function display(data){
         $('.even gradeD').remove();
         data.forEach(e => {
-            var a = 'dcm';
-           var str  = '<tr class="even gradeD" align="center"><td>'
+           var str  = '<tr class="even gradeD" align="center" id="'
+           + e.id         + '"><td>'
            + e.id         + '</td><td>'
            + e.tieude     + '</td><td>'
            + e.thumbnail       + '</td><td>'
            + e.luotxem  + '</td><td>'
-           + e.created_at + '</td><td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td></tr>';
+           + e.created_at + '</td></td><td align="center"><button class="btn btn-primary" onclick="Delete('
+           + e.id +')"> <i class="fa fa-trash-o  fa-fw"></i></button> <a class="btn btn-primary" href="/adm/editnews/'
+           + e.id +'"><i class="fa fa-pencil fa-fw"></i></a></td></tr>';
         $('tbody').append(str);
         });
     }
    display(data);
     </script>
+    <script>
+        function Delete(id){
+            //var ten = $('p[id="name'+ id +'"]').html();
+            if(confirm('Xóa tin ?'))
+            {
+                $.ajax({
+                    headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: "/adm/delnews/"+id,
+                    type: 'get',
+                    success: function(data){
+                        alert(data);
+                    },
+                    error: function(xhr) {
+                        console.log(xhr.responseText);
+                    }
+                    });
+                $('tr[id="'+id+'"]').remove();
+            }
+            else
+                return false;    
+        }
+   </script>
 @endsection

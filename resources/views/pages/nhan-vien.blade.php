@@ -19,9 +19,9 @@
                     @if($i+$j < count($data))
                     <div class="col-md-4 col-sm-6 col-xs-6"> 
                         <a href="{{ '/nhanvien/'.$data[($i+$j)]->id }}">
-                        <img style="width:234px;height:118px" src="{{asset( 'storage/images/'.$data[($i+$j)]->anh) }}" 
+                        <img style="width:234px;height:118px" src="{{asset($data[($i+$j)]->anh) }}" 
                         class="attachment-thumb_nail_crop size-thumb_nail_crop wp-post-image" alt="" /></a>
-                        <h3 class="title"><a href="/nhanvien/{{$data[($i+$j)]->id}}">{{ $data[$i]->ten }}</a></h3>
+                        <h3 class="title"><a href="/nhanvien/{{$data[($i+$j)]->id}}">{{ $data[$i+$j]->ten }}</a></h3>
                         <p class="home_summary"> {{ $data[($i+$j)]->ten }} – {{ $data[($i+$j)]->namsinh}} Quê: {{ $data[($i+$j)]->quequan }} Kinh nghiệm:{{$data[($i+$j)]->kinhnghiem_tomtat}}...</p>
                         <div class="time-more">
                             <div class="time pull-left">{{$arr['b'.($i+$j)][0]}}</div>

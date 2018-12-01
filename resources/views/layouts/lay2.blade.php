@@ -31,7 +31,7 @@
 
             <ul class="wpp-list wpp-list-with-thumbnails">
                 @foreach ($news as $n)
-                <li>
+             <li>
                 <a href="/tintuc/{{$n->id}}" title="{{$n->tieude}}"
                 target="_self"><img src="{{ asset('storage/images/'.$n->thumbnail) }}"
                                 style="width:75px; height: 75px;" alt="{{$n->tieude}}" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a>

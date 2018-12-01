@@ -45,7 +45,7 @@
             </div>
             <div class="form-group">
                 <label>Ảnh</label>
-               <p> <img id="Image" src ={{asset('storage/images/'.$info->anh)}} /></p>
+               <p> <img id="Image" src ={{asset($info->anh)}} /></p>
                 <input id="img" type="file" class="form-control-file" name="anh" />
 
             </div>
@@ -64,8 +64,21 @@
         {!! Form::close() !!}
     </div>
 </div>
-<script src="{{asset('js/ckeditor.js')}}"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/11.1.1/classic/ckeditor.js"></script>
 <script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ))
+        .catch( error => {
+            console.error( error );
+        } );
+    
+</script>
+<style>
+    .ck-editor__editable {
+        min-height: 400px;
+    }
+    </style>
+{{-- <script>
     ClassicEditor
         .create(document.querySelector('#editor'))
         .catch(error => {
@@ -97,5 +110,5 @@
             width: 200px;
             height: 150px;
         }
-</style>
+</style> --}}
 @endsection

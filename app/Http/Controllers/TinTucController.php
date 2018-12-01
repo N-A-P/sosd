@@ -40,14 +40,14 @@ class TinTucController extends Controller
     public function store(Request $request)
     {
         $model = new tintuc;
-        $model->fill($request->all());
         if($request->hasFile('thumbnail'))
         {
             $request->file('thumbnail')->store('public/images');
-            $file_name = $request->file('thumbnail')->hashName();
+            $file_name = 'http://giupviechtp.com/storage/images/'.$request->file('thumbnail')->hashName();
             $model->thumbnail = $file_name;
         }
         $model->tieude = $request->input('tieude');
+        $model->tomtat = $request->input('tomtat');
         $model->noidung = $request->input('noidung');
         $model->save();
     
@@ -96,6 +96,12 @@ class TinTucController extends Controller
      */
     public function destroy($id)
     {
-        //
+        if(tintuc::destroy($id)){
+            echo 'Đã xóa';
+        }
+        else
+        {
+            echo 'err! something wrong';
+        }
     }
 }

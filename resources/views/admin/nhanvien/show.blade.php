@@ -76,7 +76,6 @@
    display(data);
    </script>
    <script>
-   
         function Delete(id){
             var ten = $('p[id="name'+ id +'"]').html();
             if(confirm('Xóa ' +ten+'?'))
@@ -94,13 +93,10 @@
                         console.log(xhr.responseText);
                     }
                     });
-                $('tr[id="'+id+'"]').remove();
+                    $('tr[id="'+id+'"]').remove();
             }
             else
                 return false;    
         }
-      function Edit(id){
-           console.log('edit ' + id);
-       }
    </script>
 @endsection
